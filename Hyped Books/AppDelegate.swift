@@ -7,15 +7,49 @@
 //
 
 import UIKit
+import Services
+import ServiceLocator
+import Result
+import APIService
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    struct DummyCodable: Codable {
+        
+    }
 
+    enum DummyError: APIServiceError {
+        init(apiError: APIError) {
+            self = .nested(error: apiError)
+        }
+        
+        case nested(error: Swift.Error)
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let locator = ServiceLoader.shared
+        let hub = ServiceHUB.shared
+        hub.prepare(locator: locator)
+        
+        do {
+            let apiClient: APIClient = try inject()
+            let listEndpoint: Endpoint = .list(page: 0)
+            let bookEndpoint: Endpoint = .book(uuid: "iemWF1Zx")
+//            apiClient.request(listEndpoint) { (result: Result<Any, DummyError>) in
+//                print(result)
+//            }
+            apiClient.request(bookEndpoint) { (result: Result<DummyCodable, DummyError>) in
+                print(result)
+            }
+        } catch {
+            print(error)
+        }
+        
         return true
     }
 

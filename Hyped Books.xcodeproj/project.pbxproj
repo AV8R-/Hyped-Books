@@ -7,14 +7,239 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3001CD3E1F81BA7D0073D991 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2F11F80FB5A003C2014 /* Result.framework */; };
+		3001CD3F1F81BA7D0073D991 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2F11F80FB5A003C2014 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3001CD5E1F81C8AF0073D991 /* ServiceLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3001CD5C1F81C8AF0073D991 /* ServiceLocator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3001CD611F81C8AF0073D991 /* ServiceLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CD5A1F81C8AF0073D991 /* ServiceLocator.framework */; };
+		3001CD621F81C8AF0073D991 /* ServiceLocator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CD5A1F81C8AF0073D991 /* ServiceLocator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3001CD671F81C8BF0073D991 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD661F81C8BF0073D991 /* ServiceLocator.swift */; };
+		3001CD691F81C94D0073D991 /* ServiceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD681F81C94C0073D991 /* ServiceLoader.swift */; };
+		3001CD6B1F81C97D0073D991 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD6A1F81C97D0073D991 /* Shared.swift */; };
+		3001CD6E1F81CA230073D991 /* ServiceHUB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD6D1F81CA230073D991 /* ServiceHUB.swift */; };
+		3001CD701F81CAD20073D991 /* ServiceHUB+APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD6F1F81CAD20073D991 /* ServiceHUB+APIClient.swift */; };
+		3001CD7A1F81D35F0073D991 /* APIService.h in Headers */ = {isa = PBXBuildFile; fileRef = 3001CD781F81D35F0073D991 /* APIService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3001CD7D1F81D35F0073D991 /* APIService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CD761F81D35F0073D991 /* APIService.framework */; };
+		3001CD7E1F81D35F0073D991 /* APIService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CD761F81D35F0073D991 /* APIService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3001CD861F81D36F0073D991 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD2F1F81B8FC0073D991 /* Endpoint.swift */; };
+		3001CD871F81D36F0073D991 /* Endpoint+Bookmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD311F81B96D0073D991 /* Endpoint+Bookmate.swift */; };
+		3001CD881F81D36F0073D991 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD4A1F81BCF20073D991 /* APIClient.swift */; };
+		3001CD891F81D36F0073D991 /* MoyaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD4C1F81BDB80073D991 /* MoyaAPIClient.swift */; };
+		3001CD8A1F81D3AF0073D991 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2DB1F80FB53003C2014 /* Moya.framework */; };
+		3001CD8B1F81D3C40073D991 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2C61F80FB4B003C2014 /* Alamofire.framework */; };
 		30E8F2A81F80F6CD003C2014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */; };
 		30E8F2AA1F80F6CD003C2014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A91F80F6CD003C2014 /* ViewController.swift */; };
 		30E8F2AD1F80F6CD003C2014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E8F2AB1F80F6CD003C2014 /* Main.storyboard */; };
 		30E8F2AF1F80F6CD003C2014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E8F2AE1F80F6CD003C2014 /* Assets.xcassets */; };
 		30E8F2B21F80F6CD003C2014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E8F2B01F80F6CD003C2014 /* LaunchScreen.storyboard */; };
+		30E8F3031F80FF8F003C2014 /* Services.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E8F3011F80FF8F003C2014 /* Services.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30E8F3061F80FF8F003C2014 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2FF1F80FF8F003C2014 /* Services.framework */; };
+		30E8F3071F80FF8F003C2014 /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2FF1F80FF8F003C2014 /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3001CD351F81B9970073D991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2D31F80FB52003C2014 /* Moya.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6C081A4AC105D3F62F3C49;
+			remoteInfo = Moya;
+		};
+		3001CD381F81BA2D0073D991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		3001CD401F81BA7D0073D991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D454807C1A957361009D7229;
+			remoteInfo = "Result-iOS";
+		};
+		3001CD5F1F81C8AF0073D991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F29C1F80F6CD003C2014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3001CD591F81C8AF0073D991;
+			remoteInfo = ServiceLocator;
+		};
+		3001CD7B1F81D35F0073D991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F29C1F80F6CD003C2014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3001CD751F81D35F0073D991;
+			remoteInfo = APIService;
+		};
+		30E8F2C51F80FB4B003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		30E8F2C71F80FB4B003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		30E8F2C91F80FB4B003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		30E8F2CB1F80FB4B003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		30E8F2CD1F80FB4B003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		30E8F2CF1F80FB4B003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		30E8F2D11F80FB4B003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		30E8F2DA1F80FB53003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2D31F80FB52003C2014 /* Moya.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 559D567FD0DA37D6CC98FF92;
+			remoteInfo = Moya;
+		};
+		30E8F2DC1F80FB53003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2D31F80FB52003C2014 /* Moya.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 62A8C06CC9BA491AE62A431B;
+			remoteInfo = ReactiveMoya;
+		};
+		30E8F2DE1F80FB53003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2D31F80FB52003C2014 /* Moya.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D3C74EB65D75BC6DFCC646E;
+			remoteInfo = RxMoya;
+		};
+		30E8F2E01F80FB53003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2D31F80FB52003C2014 /* Moya.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5365911118011A3A4FE0CD07;
+			remoteInfo = MoyaTests;
+		};
+		30E8F2EC1F80FB5A003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480571A9572F5009D7229;
+			remoteInfo = "Result-Mac";
+		};
+		30E8F2EE1F80FB5A003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480671A9572F5009D7229;
+			remoteInfo = "Result-MacTests";
+		};
+		30E8F2F01F80FB5A003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D454807D1A957361009D7229;
+			remoteInfo = "Result-iOS";
+		};
+		30E8F2F21F80FB5A003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480871A957362009D7229;
+			remoteInfo = "Result-iOSTests";
+		};
+		30E8F2F41F80FB5A003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE471BA280DC00130C48;
+			remoteInfo = "Result-tvOS";
+		};
+		30E8F2F61F80FB5A003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE541BA280E000130C48;
+			remoteInfo = "Result-tvOSTests";
+		};
+		30E8F2F81F80FB5A003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D03579A31B2B788F005D26AE;
+			remoteInfo = "Result-watchOS";
+		};
+		30E8F3041F80FF8F003C2014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F29C1F80F6CD003C2014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30E8F2FE1F80FF8F003C2014;
+			remoteInfo = Services;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30E8F30B1F80FF8F003C2014 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3001CD3F1F81BA7D0073D991 /* Result.framework in Embed Frameworks */,
+				3001CD621F81C8AF0073D991 /* ServiceLocator.framework in Embed Frameworks */,
+				30E8F3071F80FF8F003C2014 /* Services.framework in Embed Frameworks */,
+				3001CD7E1F81D35F0073D991 /* APIService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3001CD2F1F81B8FC0073D991 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		3001CD311F81B96D0073D991 /* Endpoint+Bookmate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Bookmate.swift"; sourceTree = "<group>"; };
+		3001CD4A1F81BCF20073D991 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3001CD4C1F81BDB80073D991 /* MoyaAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaAPIClient.swift; sourceTree = "<group>"; };
+		3001CD5A1F81C8AF0073D991 /* ServiceLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ServiceLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3001CD5C1F81C8AF0073D991 /* ServiceLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceLocator.h; sourceTree = "<group>"; };
+		3001CD5D1F81C8AF0073D991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3001CD661F81C8BF0073D991 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		3001CD681F81C94C0073D991 /* ServiceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLoader.swift; sourceTree = "<group>"; };
+		3001CD6A1F81C97D0073D991 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		3001CD6D1F81CA230073D991 /* ServiceHUB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHUB.swift; sourceTree = "<group>"; };
+		3001CD6F1F81CAD20073D991 /* ServiceHUB+APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceHUB+APIClient.swift"; sourceTree = "<group>"; };
+		3001CD761F81D35F0073D991 /* APIService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APIService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3001CD781F81D35F0073D991 /* APIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		3001CD791F81D35F0073D991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30E8F2A41F80F6CD003C2014 /* Hyped Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hyped Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30E8F2A91F80F6CD003C2014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,10 +247,43 @@
 		30E8F2AE1F80F6CD003C2014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30E8F2B11F80F6CD003C2014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30E8F2B31F80F6CD003C2014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Dependencies/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		30E8F2D31F80FB52003C2014 /* Moya.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Moya.xcodeproj; path = Dependencies/Moya/Moya.xcodeproj; sourceTree = "<group>"; };
+		30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = Dependencies/Result/Result.xcodeproj; sourceTree = "<group>"; };
+		30E8F2FF1F80FF8F003C2014 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E8F3011F80FF8F003C2014 /* Services.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
+		30E8F3021F80FF8F003C2014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3001CD561F81C8AF0073D991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3001CD721F81D35F0073D991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CD8B1F81D3C40073D991 /* Alamofire.framework in Frameworks */,
+				3001CD8A1F81D3AF0073D991 /* Moya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30E8F2A11F80F6CD003C2014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CD3E1F81BA7D0073D991 /* Result.framework in Frameworks */,
+				3001CD611F81C8AF0073D991 /* ServiceLocator.framework in Frameworks */,
+				30E8F3061F80FF8F003C2014 /* Services.framework in Frameworks */,
+				3001CD7D1F81D35F0073D991 /* APIService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E8F2FB1F80FF8F003C2014 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,11 +293,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3001CD331F81B97D0073D991 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3001CD5B1F81C8AF0073D991 /* ServiceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				3001CD5C1F81C8AF0073D991 /* ServiceLocator.h */,
+				3001CD5D1F81C8AF0073D991 /* Info.plist */,
+				3001CD661F81C8BF0073D991 /* ServiceLocator.swift */,
+				3001CD681F81C94C0073D991 /* ServiceLoader.swift */,
+				3001CD6A1F81C97D0073D991 /* Shared.swift */,
+			);
+			path = ServiceLocator;
+			sourceTree = "<group>";
+		};
+		3001CD6C1F81C9F80073D991 /* HUB */ = {
+			isa = PBXGroup;
+			children = (
+				3001CD6D1F81CA230073D991 /* ServiceHUB.swift */,
+				3001CD6F1F81CAD20073D991 /* ServiceHUB+APIClient.swift */,
+			);
+			path = HUB;
+			sourceTree = "<group>";
+		};
+		3001CD771F81D35F0073D991 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				3001CD2F1F81B8FC0073D991 /* Endpoint.swift */,
+				3001CD311F81B96D0073D991 /* Endpoint+Bookmate.swift */,
+				3001CD4A1F81BCF20073D991 /* APIClient.swift */,
+				3001CD4C1F81BDB80073D991 /* MoyaAPIClient.swift */,
+				3001CD781F81D35F0073D991 /* APIService.h */,
+				3001CD791F81D35F0073D991 /* Info.plist */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
 		30E8F29B1F80F6CD003C2014 = {
 			isa = PBXGroup;
 			children = (
+				30E8F2B91F80FB3B003C2014 /* Dependencies */,
 				30E8F2A61F80F6CD003C2014 /* Hyped Books */,
+				30E8F3001F80FF8F003C2014 /* Services */,
+				3001CD5B1F81C8AF0073D991 /* ServiceLocator */,
+				3001CD771F81D35F0073D991 /* APIService */,
 				30E8F2A51F80F6CD003C2014 /* Products */,
+				3001CD331F81B97D0073D991 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +351,9 @@
 			isa = PBXGroup;
 			children = (
 				30E8F2A41F80F6CD003C2014 /* Hyped Books.app */,
+				30E8F2FF1F80FF8F003C2014 /* Services.framework */,
+				3001CD5A1F81C8AF0073D991 /* ServiceLocator.framework */,
+				3001CD761F81D35F0073D991 /* APIService.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,9 +371,131 @@
 			path = "Hyped Books";
 			sourceTree = "<group>";
 		};
+		30E8F2B91F80FB3B003C2014 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */,
+				30E8F2D31F80FB52003C2014 /* Moya.xcodeproj */,
+				30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		30E8F2BB1F80FB4B003C2014 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30E8F2C61F80FB4B003C2014 /* Alamofire.framework */,
+				30E8F2C81F80FB4B003C2014 /* Alamofire iOS Tests.xctest */,
+				30E8F2CA1F80FB4B003C2014 /* Alamofire.framework */,
+				30E8F2CC1F80FB4B003C2014 /* Alamofire macOS Tests.xctest */,
+				30E8F2CE1F80FB4B003C2014 /* Alamofire.framework */,
+				30E8F2D01F80FB4B003C2014 /* Alamofire tvOS Tests.xctest */,
+				30E8F2D21F80FB4B003C2014 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30E8F2D41F80FB52003C2014 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30E8F2DB1F80FB53003C2014 /* Moya.framework */,
+				30E8F2DD1F80FB53003C2014 /* ReactiveMoya.framework */,
+				30E8F2DF1F80FB53003C2014 /* RxMoya.framework */,
+				30E8F2E11F80FB53003C2014 /* MoyaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30E8F2E31F80FB5A003C2014 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30E8F2ED1F80FB5A003C2014 /* Result.framework */,
+				30E8F2EF1F80FB5A003C2014 /* Result-MacTests.xctest */,
+				30E8F2F11F80FB5A003C2014 /* Result.framework */,
+				30E8F2F31F80FB5A003C2014 /* Result-iOSTests.xctest */,
+				30E8F2F51F80FB5A003C2014 /* Result.framework */,
+				30E8F2F71F80FB5A003C2014 /* Result-tvOSTests.xctest */,
+				30E8F2F91F80FB5A003C2014 /* Result.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30E8F3001F80FF8F003C2014 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3001CD6C1F81C9F80073D991 /* HUB */,
+				30E8F3011F80FF8F003C2014 /* Services.h */,
+				30E8F3021F80FF8F003C2014 /* Info.plist */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3001CD571F81C8AF0073D991 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CD5E1F81C8AF0073D991 /* ServiceLocator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3001CD731F81D35F0073D991 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CD7A1F81D35F0073D991 /* APIService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E8F2FC1F80FF8F003C2014 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E8F3031F80FF8F003C2014 /* Services.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		3001CD591F81C8AF0073D991 /* ServiceLocator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3001CD631F81C8AF0073D991 /* Build configuration list for PBXNativeTarget "ServiceLocator" */;
+			buildPhases = (
+				3001CD551F81C8AF0073D991 /* Sources */,
+				3001CD561F81C8AF0073D991 /* Frameworks */,
+				3001CD571F81C8AF0073D991 /* Headers */,
+				3001CD581F81C8AF0073D991 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServiceLocator;
+			productName = ServiceLocator;
+			productReference = 3001CD5A1F81C8AF0073D991 /* ServiceLocator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3001CD751F81D35F0073D991 /* APIService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3001CD7F1F81D35F0073D991 /* Build configuration list for PBXNativeTarget "APIService" */;
+			buildPhases = (
+				3001CD711F81D35F0073D991 /* Sources */,
+				3001CD721F81D35F0073D991 /* Frameworks */,
+				3001CD731F81D35F0073D991 /* Headers */,
+				3001CD741F81D35F0073D991 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APIService;
+			productName = APIService;
+			productReference = 3001CD761F81D35F0073D991 /* APIService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		30E8F2A31F80F6CD003C2014 /* Hyped Books */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30E8F2B61F80F6CD003C2014 /* Build configuration list for PBXNativeTarget "Hyped Books" */;
@@ -74,15 +503,40 @@
 				30E8F2A01F80F6CD003C2014 /* Sources */,
 				30E8F2A11F80F6CD003C2014 /* Frameworks */,
 				30E8F2A21F80F6CD003C2014 /* Resources */,
+				30E8F30B1F80FF8F003C2014 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				30E8F3051F80FF8F003C2014 /* PBXTargetDependency */,
+				3001CD411F81BA7D0073D991 /* PBXTargetDependency */,
+				3001CD601F81C8AF0073D991 /* PBXTargetDependency */,
+				3001CD7C1F81D35F0073D991 /* PBXTargetDependency */,
 			);
 			name = "Hyped Books";
 			productName = "Hyped Books";
 			productReference = 30E8F2A41F80F6CD003C2014 /* Hyped Books.app */;
 			productType = "com.apple.product-type.application";
+		};
+		30E8F2FE1F80FF8F003C2014 /* Services */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30E8F3081F80FF8F003C2014 /* Build configuration list for PBXNativeTarget "Services" */;
+			buildPhases = (
+				30E8F2FA1F80FF8F003C2014 /* Sources */,
+				30E8F2FB1F80FF8F003C2014 /* Frameworks */,
+				30E8F2FC1F80FF8F003C2014 /* Headers */,
+				30E8F2FD1F80FF8F003C2014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3001CD391F81BA2D0073D991 /* PBXTargetDependency */,
+				3001CD361F81B9970073D991 /* PBXTargetDependency */,
+			);
+			name = Services;
+			productName = Services;
+			productReference = 30E8F2FF1F80FF8F003C2014 /* Services.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,8 +548,22 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = BManshilin;
 				TargetAttributes = {
+					3001CD591F81C8AF0073D991 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					3001CD751F81D35F0073D991 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					30E8F2A31F80F6CD003C2014 = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					30E8F2FE1F80FF8F003C2014 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -111,14 +579,174 @@
 			mainGroup = 30E8F29B1F80F6CD003C2014;
 			productRefGroup = 30E8F2A51F80F6CD003C2014 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 30E8F2BB1F80FB4B003C2014 /* Products */;
+					ProjectRef = 30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 30E8F2D41F80FB52003C2014 /* Products */;
+					ProjectRef = 30E8F2D31F80FB52003C2014 /* Moya.xcodeproj */;
+				},
+				{
+					ProductGroup = 30E8F2E31F80FB5A003C2014 /* Products */;
+					ProjectRef = 30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				30E8F2A31F80F6CD003C2014 /* Hyped Books */,
+				30E8F2FE1F80FF8F003C2014 /* Services */,
+				3001CD591F81C8AF0073D991 /* ServiceLocator */,
+				3001CD751F81D35F0073D991 /* APIService */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		30E8F2C61F80FB4B003C2014 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 30E8F2C51F80FB4B003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2C81F80FB4B003C2014 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 30E8F2C71F80FB4B003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2CA1F80FB4B003C2014 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 30E8F2C91F80FB4B003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2CC1F80FB4B003C2014 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 30E8F2CB1F80FB4B003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2CE1F80FB4B003C2014 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 30E8F2CD1F80FB4B003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2D01F80FB4B003C2014 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 30E8F2CF1F80FB4B003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2D21F80FB4B003C2014 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 30E8F2D11F80FB4B003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2DB1F80FB53003C2014 /* Moya.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Moya.framework;
+			remoteRef = 30E8F2DA1F80FB53003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2DD1F80FB53003C2014 /* ReactiveMoya.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveMoya.framework;
+			remoteRef = 30E8F2DC1F80FB53003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2DF1F80FB53003C2014 /* RxMoya.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxMoya.framework;
+			remoteRef = 30E8F2DE1F80FB53003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2E11F80FB53003C2014 /* MoyaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MoyaTests.xctest;
+			remoteRef = 30E8F2E01F80FB53003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2ED1F80FB5A003C2014 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = 30E8F2EC1F80FB5A003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2EF1F80FB5A003C2014 /* Result-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-MacTests.xctest";
+			remoteRef = 30E8F2EE1F80FB5A003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2F11F80FB5A003C2014 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = 30E8F2F01F80FB5A003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2F31F80FB5A003C2014 /* Result-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-iOSTests.xctest";
+			remoteRef = 30E8F2F21F80FB5A003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2F51F80FB5A003C2014 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = 30E8F2F41F80FB5A003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2F71F80FB5A003C2014 /* Result-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-tvOSTests.xctest";
+			remoteRef = 30E8F2F61F80FB5A003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30E8F2F91F80FB5A003C2014 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = 30E8F2F81F80FB5A003C2014 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		3001CD581F81C8AF0073D991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3001CD741F81D35F0073D991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30E8F2A21F80F6CD003C2014 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,9 +757,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30E8F2FD1F80FF8F003C2014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3001CD551F81C8AF0073D991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CD6B1F81C97D0073D991 /* Shared.swift in Sources */,
+				3001CD691F81C94D0073D991 /* ServiceLoader.swift in Sources */,
+				3001CD671F81C8BF0073D991 /* ServiceLocator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3001CD711F81D35F0073D991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CD871F81D36F0073D991 /* Endpoint+Bookmate.swift in Sources */,
+				3001CD891F81D36F0073D991 /* MoyaAPIClient.swift in Sources */,
+				3001CD861F81D36F0073D991 /* Endpoint.swift in Sources */,
+				3001CD881F81D36F0073D991 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30E8F2A01F80F6CD003C2014 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,7 +797,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30E8F2FA1F80FF8F003C2014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CD6E1F81CA230073D991 /* ServiceHUB.swift in Sources */,
+				3001CD701F81CAD20073D991 /* ServiceHUB+APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3001CD361F81B9970073D991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moya;
+			targetProxy = 3001CD351F81B9970073D991 /* PBXContainerItemProxy */;
+		};
+		3001CD391F81BA2D0073D991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 3001CD381F81BA2D0073D991 /* PBXContainerItemProxy */;
+		};
+		3001CD411F81BA7D0073D991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Result-iOS";
+			targetProxy = 3001CD401F81BA7D0073D991 /* PBXContainerItemProxy */;
+		};
+		3001CD601F81C8AF0073D991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3001CD591F81C8AF0073D991 /* ServiceLocator */;
+			targetProxy = 3001CD5F1F81C8AF0073D991 /* PBXContainerItemProxy */;
+		};
+		3001CD7C1F81D35F0073D991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3001CD751F81D35F0073D991 /* APIService */;
+			targetProxy = 3001CD7B1F81D35F0073D991 /* PBXContainerItemProxy */;
+		};
+		30E8F3051F80FF8F003C2014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30E8F2FE1F80FF8F003C2014 /* Services */;
+			targetProxy = 30E8F3041F80FF8F003C2014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		30E8F2AB1F80F6CD003C2014 /* Main.storyboard */ = {
@@ -163,6 +861,109 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3001CD641F81C8AF0073D991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DDN2V9TNSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ServiceLocator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.ServiceLocator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3001CD651F81C8AF0073D991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DDN2V9TNSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ServiceLocator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.ServiceLocator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3001CD801F81D35F0073D991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DDN2V9TNSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = APIService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.APIService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3001CD811F81D35F0073D991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DDN2V9TNSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = APIService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.APIService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		30E8F2B41F80F6CD003C2014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -273,10 +1074,12 @@
 		30E8F2B71F80F6CD003C2014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DDN2V9TNSF;
 				INFOPLIST_FILE = "Hyped Books/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.manshilin.Hyped-Books";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,10 +1091,12 @@
 		30E8F2B81F80F6CD003C2014 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DDN2V9TNSF;
 				INFOPLIST_FILE = "Hyped Books/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.manshilin.Hyped-Books";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,9 +1105,80 @@
 			};
 			name = Release;
 		};
+		30E8F3091F80FF8F003C2014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DDN2V9TNSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Services/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.Services;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		30E8F30A1F80FF8F003C2014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DDN2V9TNSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Services/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.Services;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3001CD631F81C8AF0073D991 /* Build configuration list for PBXNativeTarget "ServiceLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3001CD641F81C8AF0073D991 /* Debug */,
+				3001CD651F81C8AF0073D991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3001CD7F1F81D35F0073D991 /* Build configuration list for PBXNativeTarget "APIService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3001CD801F81D35F0073D991 /* Debug */,
+				3001CD811F81D35F0073D991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		30E8F29F1F80F6CD003C2014 /* Build configuration list for PBXProject "Hyped Books" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -317,6 +1193,15 @@
 			buildConfigurations = (
 				30E8F2B71F80F6CD003C2014 /* Debug */,
 				30E8F2B81F80F6CD003C2014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30E8F3081F80FF8F003C2014 /* Build configuration list for PBXNativeTarget "Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E8F3091F80FF8F003C2014 /* Debug */,
+				30E8F30A1F80FF8F003C2014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
