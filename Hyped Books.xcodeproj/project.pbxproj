@@ -7,14 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3001CD301F81B8FC0073D991 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD2F1F81B8FC0073D991 /* Endpoint.swift */; };
-		3001CD321F81B96D0073D991 /* Endpoint+Bookmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD311F81B96D0073D991 /* Endpoint+Bookmate.swift */; };
-		3001CD341F81B97D0073D991 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2DB1F80FB53003C2014 /* Moya.framework */; };
-		3001CD371F81BA1E0073D991 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2C61F80FB4B003C2014 /* Alamofire.framework */; };
 		3001CD3E1F81BA7D0073D991 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2F11F80FB5A003C2014 /* Result.framework */; };
 		3001CD3F1F81BA7D0073D991 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2F11F80FB5A003C2014 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3001CD4B1F81BCF20073D991 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD4A1F81BCF20073D991 /* APIClient.swift */; };
-		3001CD4D1F81BDB80073D991 /* MoyaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD4C1F81BDB80073D991 /* MoyaAPIClient.swift */; };
 		3001CD5E1F81C8AF0073D991 /* ServiceLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3001CD5C1F81C8AF0073D991 /* ServiceLocator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3001CD611F81C8AF0073D991 /* ServiceLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CD5A1F81C8AF0073D991 /* ServiceLocator.framework */; };
 		3001CD621F81C8AF0073D991 /* ServiceLocator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CD5A1F81C8AF0073D991 /* ServiceLocator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -23,6 +17,15 @@
 		3001CD6B1F81C97D0073D991 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD6A1F81C97D0073D991 /* Shared.swift */; };
 		3001CD6E1F81CA230073D991 /* ServiceHUB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD6D1F81CA230073D991 /* ServiceHUB.swift */; };
 		3001CD701F81CAD20073D991 /* ServiceHUB+APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD6F1F81CAD20073D991 /* ServiceHUB+APIClient.swift */; };
+		3001CD7A1F81D35F0073D991 /* APIService.h in Headers */ = {isa = PBXBuildFile; fileRef = 3001CD781F81D35F0073D991 /* APIService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3001CD7D1F81D35F0073D991 /* APIService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CD761F81D35F0073D991 /* APIService.framework */; };
+		3001CD7E1F81D35F0073D991 /* APIService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CD761F81D35F0073D991 /* APIService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3001CD861F81D36F0073D991 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD2F1F81B8FC0073D991 /* Endpoint.swift */; };
+		3001CD871F81D36F0073D991 /* Endpoint+Bookmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD311F81B96D0073D991 /* Endpoint+Bookmate.swift */; };
+		3001CD881F81D36F0073D991 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD4A1F81BCF20073D991 /* APIClient.swift */; };
+		3001CD891F81D36F0073D991 /* MoyaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD4C1F81BDB80073D991 /* MoyaAPIClient.swift */; };
+		3001CD8A1F81D3AF0073D991 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2DB1F80FB53003C2014 /* Moya.framework */; };
+		3001CD8B1F81D3C40073D991 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2C61F80FB4B003C2014 /* Alamofire.framework */; };
 		30E8F2A81F80F6CD003C2014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */; };
 		30E8F2AA1F80F6CD003C2014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A91F80F6CD003C2014 /* ViewController.swift */; };
 		30E8F2AD1F80F6CD003C2014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E8F2AB1F80F6CD003C2014 /* Main.storyboard */; };
@@ -61,6 +64,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3001CD591F81C8AF0073D991;
 			remoteInfo = ServiceLocator;
+		};
+		3001CD7B1F81D35F0073D991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F29C1F80F6CD003C2014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3001CD751F81D35F0073D991;
+			remoteInfo = APIService;
 		};
 		30E8F2C51F80FB4B003C2014 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -207,6 +217,7 @@
 				3001CD3F1F81BA7D0073D991 /* Result.framework in Embed Frameworks */,
 				3001CD621F81C8AF0073D991 /* ServiceLocator.framework in Embed Frameworks */,
 				30E8F3071F80FF8F003C2014 /* Services.framework in Embed Frameworks */,
+				3001CD7E1F81D35F0073D991 /* APIService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +237,9 @@
 		3001CD6A1F81C97D0073D991 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		3001CD6D1F81CA230073D991 /* ServiceHUB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHUB.swift; sourceTree = "<group>"; };
 		3001CD6F1F81CAD20073D991 /* ServiceHUB+APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceHUB+APIClient.swift"; sourceTree = "<group>"; };
+		3001CD761F81D35F0073D991 /* APIService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APIService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3001CD781F81D35F0073D991 /* APIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		3001CD791F81D35F0073D991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30E8F2A41F80F6CD003C2014 /* Hyped Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hyped Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30E8F2A91F80F6CD003C2014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -249,6 +263,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3001CD721F81D35F0073D991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CD8B1F81D3C40073D991 /* Alamofire.framework in Frameworks */,
+				3001CD8A1F81D3AF0073D991 /* Moya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30E8F2A11F80F6CD003C2014 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +279,7 @@
 				3001CD3E1F81BA7D0073D991 /* Result.framework in Frameworks */,
 				3001CD611F81C8AF0073D991 /* ServiceLocator.framework in Frameworks */,
 				30E8F3061F80FF8F003C2014 /* Services.framework in Frameworks */,
+				3001CD7D1F81D35F0073D991 /* APIService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,25 +287,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3001CD371F81BA1E0073D991 /* Alamofire.framework in Frameworks */,
-				3001CD341F81B97D0073D991 /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3001CD1B1F81B8870073D991 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				3001CD2F1F81B8FC0073D991 /* Endpoint.swift */,
-				3001CD311F81B96D0073D991 /* Endpoint+Bookmate.swift */,
-				3001CD4A1F81BCF20073D991 /* APIClient.swift */,
-				3001CD4C1F81BDB80073D991 /* MoyaAPIClient.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		3001CD331F81B97D0073D991 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +321,19 @@
 			path = HUB;
 			sourceTree = "<group>";
 		};
+		3001CD771F81D35F0073D991 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				3001CD2F1F81B8FC0073D991 /* Endpoint.swift */,
+				3001CD311F81B96D0073D991 /* Endpoint+Bookmate.swift */,
+				3001CD4A1F81BCF20073D991 /* APIClient.swift */,
+				3001CD4C1F81BDB80073D991 /* MoyaAPIClient.swift */,
+				3001CD781F81D35F0073D991 /* APIService.h */,
+				3001CD791F81D35F0073D991 /* Info.plist */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
 		30E8F29B1F80F6CD003C2014 = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +341,7 @@
 				30E8F2A61F80F6CD003C2014 /* Hyped Books */,
 				30E8F3001F80FF8F003C2014 /* Services */,
 				3001CD5B1F81C8AF0073D991 /* ServiceLocator */,
+				3001CD771F81D35F0073D991 /* APIService */,
 				30E8F2A51F80F6CD003C2014 /* Products */,
 				3001CD331F81B97D0073D991 /* Frameworks */,
 			);
@@ -328,6 +353,7 @@
 				30E8F2A41F80F6CD003C2014 /* Hyped Books.app */,
 				30E8F2FF1F80FF8F003C2014 /* Services.framework */,
 				3001CD5A1F81C8AF0073D991 /* ServiceLocator.framework */,
+				3001CD761F81D35F0073D991 /* APIService.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -398,7 +424,6 @@
 			isa = PBXGroup;
 			children = (
 				3001CD6C1F81C9F80073D991 /* HUB */,
-				3001CD1B1F81B8870073D991 /* API */,
 				30E8F3011F80FF8F003C2014 /* Services.h */,
 				30E8F3021F80FF8F003C2014 /* Info.plist */,
 			);
@@ -413,6 +438,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3001CD5E1F81C8AF0073D991 /* ServiceLocator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3001CD731F81D35F0073D991 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CD7A1F81D35F0073D991 /* APIService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +478,24 @@
 			productReference = 3001CD5A1F81C8AF0073D991 /* ServiceLocator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		3001CD751F81D35F0073D991 /* APIService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3001CD7F1F81D35F0073D991 /* Build configuration list for PBXNativeTarget "APIService" */;
+			buildPhases = (
+				3001CD711F81D35F0073D991 /* Sources */,
+				3001CD721F81D35F0073D991 /* Frameworks */,
+				3001CD731F81D35F0073D991 /* Headers */,
+				3001CD741F81D35F0073D991 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APIService;
+			productName = APIService;
+			productReference = 3001CD761F81D35F0073D991 /* APIService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		30E8F2A31F80F6CD003C2014 /* Hyped Books */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30E8F2B61F80F6CD003C2014 /* Build configuration list for PBXNativeTarget "Hyped Books" */;
@@ -460,6 +511,7 @@
 				30E8F3051F80FF8F003C2014 /* PBXTargetDependency */,
 				3001CD411F81BA7D0073D991 /* PBXTargetDependency */,
 				3001CD601F81C8AF0073D991 /* PBXTargetDependency */,
+				3001CD7C1F81D35F0073D991 /* PBXTargetDependency */,
 			);
 			name = "Hyped Books";
 			productName = "Hyped Books";
@@ -499,6 +551,10 @@
 					3001CD591F81C8AF0073D991 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					3001CD751F81D35F0073D991 = {
+						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
 					30E8F2A31F80F6CD003C2014 = {
@@ -542,6 +598,7 @@
 				30E8F2A31F80F6CD003C2014 /* Hyped Books */,
 				30E8F2FE1F80FF8F003C2014 /* Services */,
 				3001CD591F81C8AF0073D991 /* ServiceLocator */,
+				3001CD751F81D35F0073D991 /* APIService */,
 			);
 		};
 /* End PBXProject section */
@@ -683,6 +740,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3001CD741F81D35F0073D991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30E8F2A21F80F6CD003C2014 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -713,6 +777,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3001CD711F81D35F0073D991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CD871F81D36F0073D991 /* Endpoint+Bookmate.swift in Sources */,
+				3001CD891F81D36F0073D991 /* MoyaAPIClient.swift in Sources */,
+				3001CD861F81D36F0073D991 /* Endpoint.swift in Sources */,
+				3001CD881F81D36F0073D991 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30E8F2A01F80F6CD003C2014 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -726,11 +801,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3001CD321F81B96D0073D991 /* Endpoint+Bookmate.swift in Sources */,
 				3001CD6E1F81CA230073D991 /* ServiceHUB.swift in Sources */,
-				3001CD4D1F81BDB80073D991 /* MoyaAPIClient.swift in Sources */,
-				3001CD301F81B8FC0073D991 /* Endpoint.swift in Sources */,
-				3001CD4B1F81BCF20073D991 /* APIClient.swift in Sources */,
 				3001CD701F81CAD20073D991 /* ServiceHUB+APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -757,6 +828,11 @@
 			isa = PBXTargetDependency;
 			target = 3001CD591F81C8AF0073D991 /* ServiceLocator */;
 			targetProxy = 3001CD5F1F81C8AF0073D991 /* PBXContainerItemProxy */;
+		};
+		3001CD7C1F81D35F0073D991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3001CD751F81D35F0073D991 /* APIService */;
+			targetProxy = 3001CD7B1F81D35F0073D991 /* PBXContainerItemProxy */;
 		};
 		30E8F3051F80FF8F003C2014 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -829,6 +905,56 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.ServiceLocator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3001CD801F81D35F0073D991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DDN2V9TNSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = APIService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.APIService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3001CD811F81D35F0073D991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DDN2V9TNSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = APIService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.APIService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -1040,6 +1166,15 @@
 			buildConfigurations = (
 				3001CD641F81C8AF0073D991 /* Debug */,
 				3001CD651F81C8AF0073D991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3001CD7F1F81D35F0073D991 /* Build configuration list for PBXNativeTarget "APIService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3001CD801F81D35F0073D991 /* Debug */,
+				3001CD811F81D35F0073D991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

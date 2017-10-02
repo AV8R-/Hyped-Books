@@ -20,17 +20,22 @@ extension MoyaAPIClient: APIClient {
         _ endpoint: Endpoint,
         completion: @escaping (Result<V, E>) -> Void
         )
-        where E: APIServiceError
+        where
+            E: APIServiceError,
+            V: Codable
     {
         provider.request(endpoint) { result in
             switch result {
             case .success(let response):
                 do {
-                    let json = try response
+                    let data = try response
                         .filterSuccessfulStatusCodes()
-                        .mapJSON()
+                        .data
                     
-                    print(json)
+                    let jsonDecoder = JSONDecoder()
+                    let result = try jsonDecoder.decode(V.self, from: data)
+                    
+                    completion(.success(result))
                 } catch let error as MoyaError {
                     let apiError = error.apiError
                     completion(.failure(E(apiError: apiError)))

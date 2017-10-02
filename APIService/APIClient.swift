@@ -14,7 +14,9 @@ public protocol APIClient {
         _ endpoint: Endpoint,
         completion: @escaping (Result<V, E>) -> Void
     )
-    where E: APIServiceError
+    where
+        E: APIServiceError,
+        V: Codable
 }
 
 public protocol APIServiceError: Error {

@@ -8,6 +8,7 @@
 
 import Foundation
 import ServiceLocator
+import APIService
 
 public final class ServiceHUB {
     public enum Services {

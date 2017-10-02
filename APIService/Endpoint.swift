@@ -10,5 +10,5 @@ import Foundation
 
 public enum Endpoint {
     case list(page: Int)
-    case book(id: Int)
+    case book(uuid: String)
 }

@@ -10,11 +10,16 @@ import UIKit
 import Services
 import ServiceLocator
 import Result
+import APIService
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    struct DummyCodable: Codable {
+        
+    }
 
     enum DummyError: APIServiceError {
         init(apiError: APIError) {
@@ -34,8 +39,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do {
             let apiClient: APIClient = try inject()
             let listEndpoint: Endpoint = .list(page: 0)
-            let bookEndpoint: Endpoint = .book(id: 0)
-            apiClient.request(listEndpoint) { (result: Result<Any, DummyError>) in
+            let bookEndpoint: Endpoint = .book(uuid: "iemWF1Zx")
+//            apiClient.request(listEndpoint) { (result: Result<Any, DummyError>) in
+//                print(result)
+//            }
+            apiClient.request(bookEndpoint) { (result: Result<DummyCodable, DummyError>) in
                 print(result)
             }
         } catch {

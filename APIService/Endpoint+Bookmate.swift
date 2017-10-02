@@ -16,7 +16,7 @@ extension Endpoint: TargetType {
     
     public var path: String {
         switch self {
-        case .book(id: let id): return "/books/\(id)"
+        case .book(uuid: let uuid): return "/books/\(uuid)"
         case .list: return "/books/popular"
         }
     }

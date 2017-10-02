@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import APIService
 
 extension ServiceHUB {
     func apiClient() -> APIClient {
