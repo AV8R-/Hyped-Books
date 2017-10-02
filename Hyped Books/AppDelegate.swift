@@ -8,6 +8,7 @@
 
 import UIKit
 import Services
+import ServiceLocator
 import Result
 
 @UIApplicationMain
@@ -26,11 +27,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let apiClient: APIClient = MoyaAPIClient()
-        let listEndpoint: Endpoint = .list(page: 0)
-        let bookEndpoint: Endpoint = .book(id: 0)
-        apiClient.request(listEndpoint) { (result: Result<Any, DummyError>) in
-            print(result)
+        let locator = ServiceLoader.shared
+        let hub = ServiceHUB.shared
+        hub.prepare(locator: locator)
+        
+        do {
+            let apiClient: APIClient = try inject()
+            let listEndpoint: Endpoint = .list(page: 0)
+            let bookEndpoint: Endpoint = .book(id: 0)
+            apiClient.request(listEndpoint) { (result: Result<Any, DummyError>) in
+                print(result)
+            }
+        } catch {
+            print(error)
         }
         
         return true
