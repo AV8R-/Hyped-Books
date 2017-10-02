@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import Services
+import Result
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    enum DummyError: APIServiceError {
+        init(apiError: APIError) {
+            self = .nested(error: apiError)
+        }
+        
+        case nested(error: Swift.Error)
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let apiClient: APIClient = MoyaAPIClient()
+        let listEndpoint: Endpoint = .list(page: 0)
+        let bookEndpoint: Endpoint = .book(id: 0)
+        apiClient.request(listEndpoint) { (result: Result<Any, DummyError>) in
+            print(result)
+        }
+        
         return true
     }
 
