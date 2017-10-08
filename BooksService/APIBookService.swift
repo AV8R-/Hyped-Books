@@ -15,11 +15,11 @@ public final class APIBookService: BooksService {
     
     let apiClient: APIClient
     
-    init(client: APIClient) {
+    public init(client: APIClient) {
         self.apiClient = client
     }
     
-    func fetchList(
+    public func fetchList(
         page: Int,
         completion: @escaping (Result<[Book], BookError>) -> Void
         )
@@ -33,7 +33,7 @@ public final class APIBookService: BooksService {
         }
     }
     
-    func fetchBook(
+    public func fetchBook(
         byUUID uuid: String,
         completion: @escaping (Result<Book, BookError>) -> Void
         )

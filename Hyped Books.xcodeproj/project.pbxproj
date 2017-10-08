@@ -39,6 +39,7 @@
 		3001CDCA1F81D9D20073D991 /* BooksService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CDC21F81D9D20073D991 /* BooksService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3001CDDF1F81D9E50073D991 /* BooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CDDE1F81D9E50073D991 /* BooksService.swift */; };
 		305401401F8A4F6D005A60FE /* APIBookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3054013F1F8A4F6D005A60FE /* APIBookService.swift */; };
+		305401521F8A5781005A60FE /* ServicesHUB+Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305401511F8A5781005A60FE /* ServicesHUB+Books.swift */; };
 		30E8F2A81F80F6CD003C2014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */; };
 		30E8F2AA1F80F6CD003C2014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A91F80F6CD003C2014 /* ViewController.swift */; };
 		30E8F2AD1F80F6CD003C2014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E8F2AB1F80F6CD003C2014 /* Main.storyboard */; };
@@ -282,6 +283,7 @@
 		3001CDC51F81D9D20073D991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3001CDDE1F81D9E50073D991 /* BooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksService.swift; sourceTree = "<group>"; };
 		3054013F1F8A4F6D005A60FE /* APIBookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBookService.swift; sourceTree = "<group>"; };
+		305401511F8A5781005A60FE /* ServicesHUB+Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServicesHUB+Books.swift"; sourceTree = "<group>"; };
 		30E8F2A41F80F6CD003C2014 /* Hyped Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hyped Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30E8F2A91F80F6CD003C2014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 			children = (
 				3001CD6D1F81CA230073D991 /* ServiceHUB.swift */,
 				3001CD6F1F81CAD20073D991 /* ServiceHUB+APIClient.swift */,
+				305401511F8A5781005A60FE /* ServicesHUB+Books.swift */,
 			);
 			path = HUB;
 			sourceTree = "<group>";
@@ -991,6 +994,7 @@
 			files = (
 				3001CD6E1F81CA230073D991 /* ServiceHUB.swift in Sources */,
 				3001CD701F81CAD20073D991 /* ServiceHUB+APIClient.swift in Sources */,
+				305401521F8A5781005A60FE /* ServicesHUB+Books.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

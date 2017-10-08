@@ -11,15 +11,15 @@ import Result
 import Model
 import APIService
 
-enum BookError: APIServiceError {
-    init(apiError: APIError) {
+public enum BookError: APIServiceError {
+    public init(apiError: APIError) {
         self = .nested(api: apiError)
     }
     
     case nested(api: APIError)
 }
 
-protocol BooksService {
+public protocol BooksService {
     func fetchList(
         page: Int,
         completion: @escaping (Result<[Book], BookError>) -> Void

@@ -9,27 +9,13 @@
 import UIKit
 import Services
 import ServiceLocator
-import Result
-import APIService
-import Model
+import protocol BooksService.BooksService
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    struct BookWrapper: Codable {
-        let book: Book
-    }
-
-    enum DummyError: APIServiceError {
-        init(apiError: APIError) {
-            self = .nested(error: apiError)
-        }
-        
-        case nested(error: Swift.Error)
-    }
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -37,18 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let hub = ServiceHUB.shared
         hub.prepare(locator: locator)
         
-        do {
-            let apiClient: APIClient = try inject()
-            let listEndpoint: Endpoint = .list(page: 0)
-            let bookEndpoint: Endpoint = .book(uuid: "iemWF1Zx")
-            apiClient.request(listEndpoint) { (result: Result<BookList, DummyError>) in
-                print(result)
-            }
-            apiClient.request(bookEndpoint) { (result: Result<BookWrapper, DummyError>) in
-                print(result)
-            }
-        } catch {
-            print(error)
+        let books: BooksService = try! inject()
+        
+        books.fetchBook(byUUID: "iemWF1Zx") { result in
+            print(result)
+        }
+        
+        books.fetchList(page: 0) { result in
+            print(result)
         }
         
         return true

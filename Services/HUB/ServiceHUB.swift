@@ -19,5 +19,6 @@ public final class ServiceHUB {
     
     public func prepare(locator: ServiceLocator) {
         locator.register(apiClient)
+        locator.register(bookService(api: try! locator.inject()))
     }
 }
