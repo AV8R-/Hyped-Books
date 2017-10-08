@@ -18,7 +18,7 @@ protocol PopularBooksCollectionViewDataSource {
 }
 
 protocol PopularBooksViewPresenterProtocol: PopularBooksCollectionViewDataSource {
-    
+    func loadMore()
 }
 
 protocol PopularBooksPresenterModelProtocol: class {
@@ -36,4 +36,5 @@ protocol PopularBooksViewProtocol: class {
 protocol PopularBooksModelProtocol: class {
     associatedtype Model
     var books: [Model] { get }
+    func loadMore()
 }

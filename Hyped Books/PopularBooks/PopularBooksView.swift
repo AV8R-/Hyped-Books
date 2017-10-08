@@ -15,12 +15,12 @@ where
     Presenter.Cell == Cell
 {
     fileprivate let presenter: Presenter
-    var isCanLoadMore: Bool = true
+    var isAbleLoadMore: Bool = true
+    private var zone: Zone = .freeScroll
     
     fileprivate var reuseIdentifier: String {
         return "cell"
     }
-    
     
     init(presenter: Presenter) {
         self.presenter = presenter
@@ -64,11 +64,29 @@ where
         presenter.configure(cell: cell, atIndex: indexPath.row)
         return cell
     }
+    
+    func loadMoreIfAble() {
+        guard isAbleLoadMore else {
+            return
+        }
+        presenter.loadMore()
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let visibleEdge = scrollView.contentOffset.y + view.bounds.height
+        let hidden = scrollView.contentSize.height - visibleEdge
+        
+        if zone.willChange(hiddenSpace: hidden),
+            case .load = zone
+        {
+            loadMoreIfAble()
+        }
+    }
 }
 
 extension PopularBooksCollectionView: PopularBooksViewProtocol {
     func blockLoadMore() {
-        isCanLoadMore = false
+        isAbleLoadMore = false
     }
     
     func showError(title: String, description: String) {
@@ -77,10 +95,30 @@ extension PopularBooksCollectionView: PopularBooksViewProtocol {
             message: description,
             preferredStyle: .alert
         )
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
     }
     
     func reload() {
+        let contentOffset = collectionView?.contentOffset
         collectionView?.reloadData()
+        collectionView?.contentOffset = contentOffset ?? .zero
+    }
+}
+
+fileprivate enum Zone {
+    case load, freeScroll
+    
+    private var loadSpaceRange: ClosedRange<CGFloat> {
+        return -1000...300
+    }
+    
+    mutating func willChange(hiddenSpace space: CGFloat) -> Bool {
+        switch (self, space) {
+        case (.load, loadSpaceRange): return false
+        case (.load, _): self = .freeScroll; return true
+        case (.freeScroll, loadSpaceRange): self = .load; return true
+        case (.freeScroll, _): return false
+        }
     }
 }

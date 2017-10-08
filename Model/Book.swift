@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Book: Codable {
-    public let annotation: String
+    public let annotation: String?
     public let authors: String
     public let bookshelvesCount: Int
     public let isCanBeRead: Bool

@@ -39,17 +39,24 @@ where
     func itemsCount() -> Int {
         return model.books.count
     }
+    
+    func loadMore() {
+        model.loadMore()
+    }
 }
 
 extension PopularBooksPresenter: PopularBooksPresenterModelProtocol {
     func blockLoadMore() {
-        view.blockLoadMore()
+        DispatchQueue.main.async(execute: view.blockLoadMore)
     }
     func handle(error: APIServiceError) {
-        view.showError(title: error.title, description: error.description)
+        DispatchQueue.main.async {
+            self.view
+            .showError(title: error.title, description: error.description)
+        }
     }
     func reload() {
-        view.reload()
+        DispatchQueue.main.async(execute: view.reload)
     }
 }
 

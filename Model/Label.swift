@@ -10,6 +10,7 @@ import Foundation
 
 public struct Label: Codable {
     public enum Kind: String, Codable {
+        case `default`
         case `private`
         case premium
     }
