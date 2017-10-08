@@ -34,6 +34,11 @@
 		3001CDB51F81D6360073D991 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CDB41F81D6360073D991 /* Label.swift */; };
 		3001CDB71F81D63E0073D991 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CDB61F81D63E0073D991 /* Author.swift */; };
 		3001CDB91F81D91E0073D991 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CDB81F81D91E0073D991 /* List.swift */; };
+		3001CDC61F81D9D20073D991 /* BooksService.h in Headers */ = {isa = PBXBuildFile; fileRef = 3001CDC41F81D9D20073D991 /* BooksService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3001CDC91F81D9D20073D991 /* BooksService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CDC21F81D9D20073D991 /* BooksService.framework */; };
+		3001CDCA1F81D9D20073D991 /* BooksService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CDC21F81D9D20073D991 /* BooksService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3001CDDF1F81D9E50073D991 /* BooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CDDE1F81D9E50073D991 /* BooksService.swift */; };
+		305401401F8A4F6D005A60FE /* APIBookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3054013F1F8A4F6D005A60FE /* APIBookService.swift */; };
 		30E8F2A81F80F6CD003C2014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */; };
 		30E8F2AA1F80F6CD003C2014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A91F80F6CD003C2014 /* ViewController.swift */; };
 		30E8F2AD1F80F6CD003C2014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E8F2AB1F80F6CD003C2014 /* Main.storyboard */; };
@@ -86,6 +91,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3001CD931F81D56F0073D991;
 			remoteInfo = Model;
+		};
+		3001CDC71F81D9D20073D991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F29C1F80F6CD003C2014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3001CDC11F81D9D20073D991;
+			remoteInfo = BooksService;
 		};
 		30E8F2C51F80FB4B003C2014 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -230,6 +242,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3001CD3F1F81BA7D0073D991 /* Result.framework in Embed Frameworks */,
+				3001CDCA1F81D9D20073D991 /* BooksService.framework in Embed Frameworks */,
 				3001CD621F81C8AF0073D991 /* ServiceLocator.framework in Embed Frameworks */,
 				30E8F3071F80FF8F003C2014 /* Services.framework in Embed Frameworks */,
 				3001CD7E1F81D35F0073D991 /* APIService.framework in Embed Frameworks */,
@@ -264,6 +277,11 @@
 		3001CDB41F81D6360073D991 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		3001CDB61F81D63E0073D991 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		3001CDB81F81D91E0073D991 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		3001CDC21F81D9D20073D991 /* BooksService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BooksService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3001CDC41F81D9D20073D991 /* BooksService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BooksService.h; sourceTree = "<group>"; };
+		3001CDC51F81D9D20073D991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3001CDDE1F81D9E50073D991 /* BooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksService.swift; sourceTree = "<group>"; };
+		3054013F1F8A4F6D005A60FE /* APIBookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBookService.swift; sourceTree = "<group>"; };
 		30E8F2A41F80F6CD003C2014 /* Hyped Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hyped Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30E8F2A91F80F6CD003C2014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -303,11 +321,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3001CDBE1F81D9D20073D991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30E8F2A11F80F6CD003C2014 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3001CD3E1F81BA7D0073D991 /* Result.framework in Frameworks */,
+				3001CDC91F81D9D20073D991 /* BooksService.framework in Frameworks */,
 				3001CD611F81C8AF0073D991 /* ServiceLocator.framework in Frameworks */,
 				30E8F3061F80FF8F003C2014 /* Services.framework in Frameworks */,
 				3001CD7D1F81D35F0073D991 /* APIService.framework in Frameworks */,
@@ -380,6 +406,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3001CDC31F81D9D20073D991 /* BooksService */ = {
+			isa = PBXGroup;
+			children = (
+				3001CDC41F81D9D20073D991 /* BooksService.h */,
+				3001CDC51F81D9D20073D991 /* Info.plist */,
+				3001CDDE1F81D9E50073D991 /* BooksService.swift */,
+				3054013F1F8A4F6D005A60FE /* APIBookService.swift */,
+			);
+			path = BooksService;
+			sourceTree = "<group>";
+		};
 		30E8F29B1F80F6CD003C2014 = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +426,7 @@
 				3001CD5B1F81C8AF0073D991 /* ServiceLocator */,
 				3001CD771F81D35F0073D991 /* APIService */,
 				3001CD951F81D56F0073D991 /* Model */,
+				3001CDC31F81D9D20073D991 /* BooksService */,
 				30E8F2A51F80F6CD003C2014 /* Products */,
 				3001CD331F81B97D0073D991 /* Frameworks */,
 			);
@@ -402,6 +440,7 @@
 				3001CD5A1F81C8AF0073D991 /* ServiceLocator.framework */,
 				3001CD761F81D35F0073D991 /* APIService.framework */,
 				3001CD941F81D56F0073D991 /* Model.framework */,
+				3001CDC21F81D9D20073D991 /* BooksService.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -505,6 +544,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3001CDBF1F81D9D20073D991 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3001CDC61F81D9D20073D991 /* BooksService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30E8F2FC1F80FF8F003C2014 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,6 +617,24 @@
 			productReference = 3001CD941F81D56F0073D991 /* Model.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		3001CDC11F81D9D20073D991 /* BooksService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3001CDDD1F81D9D20073D991 /* Build configuration list for PBXNativeTarget "BooksService" */;
+			buildPhases = (
+				3001CDBD1F81D9D20073D991 /* Sources */,
+				3001CDBE1F81D9D20073D991 /* Frameworks */,
+				3001CDBF1F81D9D20073D991 /* Headers */,
+				3001CDC01F81D9D20073D991 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BooksService;
+			productName = BooksService;
+			productReference = 3001CDC21F81D9D20073D991 /* BooksService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		30E8F2A31F80F6CD003C2014 /* Hyped Books */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30E8F2B61F80F6CD003C2014 /* Build configuration list for PBXNativeTarget "Hyped Books" */;
@@ -587,6 +652,7 @@
 				3001CD601F81C8AF0073D991 /* PBXTargetDependency */,
 				3001CD7C1F81D35F0073D991 /* PBXTargetDependency */,
 				3001CD9A1F81D56F0073D991 /* PBXTargetDependency */,
+				3001CDC81F81D9D20073D991 /* PBXTargetDependency */,
 			);
 			name = "Hyped Books";
 			productName = "Hyped Books";
@@ -637,6 +703,11 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
+					3001CDC11F81D9D20073D991 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
 					30E8F2A31F80F6CD003C2014 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -680,6 +751,7 @@
 				3001CD591F81C8AF0073D991 /* ServiceLocator */,
 				3001CD751F81D35F0073D991 /* APIService */,
 				3001CD931F81D56F0073D991 /* Model */,
+				3001CDC11F81D9D20073D991 /* BooksService */,
 			);
 		};
 /* End PBXProject section */
@@ -835,6 +907,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3001CDC01F81D9D20073D991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30E8F2A21F80F6CD003C2014 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -888,6 +967,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3001CDBD1F81D9D20073D991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305401401F8A4F6D005A60FE /* APIBookService.swift in Sources */,
+				3001CDDF1F81D9E50073D991 /* BooksService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30E8F2A01F80F6CD003C2014 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -938,6 +1026,11 @@
 			isa = PBXTargetDependency;
 			target = 3001CD931F81D56F0073D991 /* Model */;
 			targetProxy = 3001CD991F81D56F0073D991 /* PBXContainerItemProxy */;
+		};
+		3001CDC81F81D9D20073D991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3001CDC11F81D9D20073D991 /* BooksService */;
+			targetProxy = 3001CDC71F81D9D20073D991 /* PBXContainerItemProxy */;
 		};
 		30E8F3051F80FF8F003C2014 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1113,6 +1206,59 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.Model;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3001CDCB1F81D9D20073D991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DDN2V9TNSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BooksService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.BooksService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3001CDCC1F81D9D20073D991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DDN2V9TNSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BooksService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manshilin.BooksService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -1342,6 +1488,15 @@
 			buildConfigurations = (
 				3001CD9D1F81D56F0073D991 /* Debug */,
 				3001CD9E1F81D56F0073D991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3001CDDD1F81D9D20073D991 /* Build configuration list for PBXNativeTarget "BooksService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3001CDCB1F81D9D20073D991 /* Debug */,
+				3001CDCC1F81D9D20073D991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

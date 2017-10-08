@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct List<T: Codable>: Codable {
-    let values: [T]
-    let title: String
+public struct BookList: Codable {
+    let books: [Book]
 }
+
