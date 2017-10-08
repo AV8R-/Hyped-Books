@@ -38,20 +38,25 @@ public final class Pager<Service>
     public typealias Error = PagerError<Service.Error>
     public typealias Model = Service.Model
     
-    var page: Int = 0
+    var page: Int = 1
     let pageLimit: Int
     let service: Service
+    let queue: OperationQueue
     
     public init(service: Service, pageLimit: Int) {
         self.service = service
         self.pageLimit = pageLimit
+        self.queue = .init()
+        queue.maxConcurrentOperationCount = 1
     }
     
     public func loadMore(_ completion: @escaping (Result<[Model], Error>) -> Void) {
-        service.load(page: page) { [weak self] result in
-            self?.process(result: result, completion: completion)
-            if case .success = result {
-                self?.page += 1
+        queue.addOperation { [unowned self] in
+            self.service.load(page: self.page) { [weak self] result in
+                self?.process(result: result, completion: completion)
+                if case .success = result {
+                    self?.page += 1
+                }
             }
         }
     }
@@ -79,6 +84,7 @@ public final class Pager<Service>
     }
     
     deinit {
+        queue.cancelAllOperations()
         service.cancel()
     }
     

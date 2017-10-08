@@ -9,12 +9,16 @@
 import UIKit
 import Services
 import ServiceLocator
-import protocol BooksService.BooksService
+import BooksService
+import Pager
+import Result
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var bookPager: Pager<PagedBookServie>!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -24,14 +28,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         hub.prepare(locator: locator)
         
         let books: BooksService = try! inject()
+        let pagedBooks = PagedBookServie(service: books)
+        bookPager = Pager(service: pagedBooks, pageLimit: 20)
+        
+        bookPager.loadMore { result in
+            print(result)
+            self.bookPager.loadMore { result in
+                print(result)
+            }
+        }
         
         books.fetchBook(byUUID: "iemWF1Zx") { result in
-            print(result)
+//            print(result)
         }
         
-        books.fetchList(page: 0) { result in
-            print(result)
-        }
+//        books.fetchList(page: 0) { result in
+//            print(result.value?.count as Any)
+//        }
         
         return true
     }

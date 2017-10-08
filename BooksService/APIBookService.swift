@@ -14,9 +14,12 @@ import Result
 public final class APIBookService: BooksService {
     
     let apiClient: APIClient
+    let operationQueue: OperationQueue
     
     public init(client: APIClient) {
         self.apiClient = client
+        operationQueue = .init()
+        operationQueue.maxConcurrentOperationCount = 1
     }
     
     public func fetchList(
@@ -38,13 +41,24 @@ public final class APIBookService: BooksService {
         completion: @escaping (Result<Book, BookError>) -> Void
         )
     {
-        apiClient.request(.book(uuid: uuid))
-        { (result: Result<APIBook, BookError>) in
-            switch result {
-            case .success(let book): completion(.success(book.book))
-            case .failure(let error): completion(.failure(error))
+        operationQueue.addOperation { [weak self] in
+            self?.apiClient.request(.book(uuid: uuid))
+            { (result: Result<APIBook, BookError>) in
+                switch result {
+                case .success(let book): completion(.success(book.book))
+                case .failure(let error): completion(.failure(error))
+                }
             }
         }
+    }
+    
+    public func cancelAll() {
+        operationQueue.cancelAllOperations()
+
+    }
+    
+    deinit {
+        cancelAll()
     }
 }
 

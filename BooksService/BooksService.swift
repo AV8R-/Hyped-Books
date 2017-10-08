@@ -30,5 +30,7 @@ public protocol BooksService {
         byUUID uuid: String,
         completion: @escaping (Result<Book, BookError>) -> Void
     )
+    
+    func cancelAll()
 }
 

@@ -17,8 +17,8 @@ public final class PagedBookServie: PagedService {
     
     let service: BooksService
     
-    init(bookService: BooksService) {
-        self.service = bookService
+    public init(service: BooksService) {
+        self.service = service
     }
     
     public func fetchLoaded(
@@ -37,7 +37,7 @@ public final class PagedBookServie: PagedService {
     }
     
     public func cancel() {
-        
+        service.cancelAll()
     }
     
 }
