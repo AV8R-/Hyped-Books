@@ -17,6 +17,7 @@ public enum BookError: APIServiceError {
     }
     
     case nested(api: APIError)
+    case noPersistanteStorage
 }
 
 public protocol BooksService {
@@ -29,5 +30,7 @@ public protocol BooksService {
         byUUID uuid: String,
         completion: @escaping (Result<Book, BookError>) -> Void
     )
+    
+    func cancelAll()
 }
 
