@@ -39,13 +39,12 @@ public final class Pager<Service>
     public typealias Model = Service.Model
     
     var page: Int = 1
-    let pageLimit: Int
+    var pageLimit: Int = 0
     let service: Service
     let queue: OperationQueue
     
-    public init(service: Service, pageLimit: Int) {
+    public init(service: Service) {
         self.service = service
-        self.pageLimit = pageLimit
         self.queue = .init()
         queue.maxConcurrentOperationCount = 1
     }
@@ -55,6 +54,11 @@ public final class Pager<Service>
             self.service.load(page: self.page) { [weak self] result in
                 self?.process(result: result, completion: completion)
                 if case .success = result {
+                    if self?.page == 1,
+                        let values = result.value
+                    {
+                        self?.pageLimit = values.count
+                    }
                     self?.page += 1
                 }
             }

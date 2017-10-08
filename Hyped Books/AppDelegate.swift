@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let books: BooksService = try! inject()
         let pagedBooks = PagedBookServie(service: books)
-        bookPager = Pager(service: pagedBooks, pageLimit: 20)
+        bookPager = Pager(service: pagedBooks)
         
         bookPager.loadMore { result in
             print(result)
