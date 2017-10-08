@@ -9,25 +9,25 @@
 import Foundation
 
 public struct Book: Codable {
-    let annotation: String
-    let authors: String
-    let bookshelvesCount: Int
-    let isCanBeRead: Bool
-    let cover: BookCover
-    let impressionsCount: Int
-    let isInLibrary: Int
-    let isInWishlist: Int
-    let labels: [Label]
-    let language: String
-    let libraryCardUUID: String?
-    let newAuthors: [Author]?
-    let paperPagesCount: Int
-    let quotesCount: Int
-    let readersCount: Int
-    let title: String
-    let topics: [String]?
-    let uuid: String
-    let variantsCount: Int?
+    public let annotation: String
+    public let authors: String
+    public let bookshelvesCount: Int
+    public let isCanBeRead: Bool
+    public let cover: BookCover
+    public let impressionsCount: Int
+    public let isInLibrary: Int
+    public let isInWishlist: Int
+    public let labels: [Label]
+    public let language: String
+    public let libraryCardUUID: String?
+    public let newAuthors: [Author]?
+    public let paperPagesCount: Int
+    public let quotesCount: Int
+    public let readersCount: Int
+    public let title: String
+    public let topics: [String]?
+    public let uuid: String
+    public let variantsCount: Int?
 }
 
 extension Book {

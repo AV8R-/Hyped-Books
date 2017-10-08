@@ -11,14 +11,16 @@ import UIKit
 final class PopularBooksCollectionView<Cell, Presenter>:
     UICollectionViewController
 where
-    Presenter: PopularBooksCollectionViewDataSource,
+    Presenter: PopularBooksViewPresenterProtocol,
     Presenter.Cell == Cell
 {
     fileprivate let presenter: Presenter
+    var isCanLoadMore: Bool = true
     
     fileprivate var reuseIdentifier: String {
         return "cell"
     }
+    
     
     init(presenter: Presenter) {
         self.presenter = presenter
@@ -61,5 +63,24 @@ where
             ) as! Cell
         presenter.configure(cell: cell, atIndex: indexPath.row)
         return cell
+    }
+}
+
+extension PopularBooksCollectionView: PopularBooksViewProtocol {
+    func blockLoadMore() {
+        isCanLoadMore = false
+    }
+    
+    func showError(title: String, description: String) {
+        let alert = UIAlertController(
+            title: title,
+            message: description,
+            preferredStyle: .alert
+        )
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func reload() {
+        collectionView?.reloadData()
     }
 }

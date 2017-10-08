@@ -33,7 +33,6 @@
 		3001CDB31F81D6300073D991 /* BookCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CDB21F81D6300073D991 /* BookCover.swift */; };
 		3001CDB51F81D6360073D991 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CDB41F81D6360073D991 /* Label.swift */; };
 		3001CDB71F81D63E0073D991 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CDB61F81D63E0073D991 /* Author.swift */; };
-		3001CDB91F81D91E0073D991 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CDB81F81D91E0073D991 /* List.swift */; };
 		3001CDC61F81D9D20073D991 /* BooksService.h in Headers */ = {isa = PBXBuildFile; fileRef = 3001CDC41F81D9D20073D991 /* BooksService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3001CDC91F81D9D20073D991 /* BooksService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CDC21F81D9D20073D991 /* BooksService.framework */; };
 		3001CDCA1F81D9D20073D991 /* BooksService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CDC21F81D9D20073D991 /* BooksService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -301,7 +300,6 @@
 		3001CDB21F81D6300073D991 /* BookCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCover.swift; sourceTree = "<group>"; };
 		3001CDB41F81D6360073D991 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		3001CDB61F81D63E0073D991 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
-		3001CDB81F81D91E0073D991 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		3001CDC21F81D9D20073D991 /* BooksService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BooksService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3001CDC41F81D9D20073D991 /* BooksService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BooksService.h; sourceTree = "<group>"; };
 		3001CDC51F81D9D20073D991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -452,7 +450,6 @@
 				3001CDB21F81D6300073D991 /* BookCover.swift */,
 				3001CDB41F81D6360073D991 /* Label.swift */,
 				3001CDB61F81D63E0073D991 /* Author.swift */,
-				3001CDB81F81D91E0073D991 /* List.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1092,7 +1089,6 @@
 			files = (
 				3001CDB31F81D6300073D991 /* BookCover.swift in Sources */,
 				3001CDB11F81D5820073D991 /* Book.swift in Sources */,
-				3001CDB91F81D91E0073D991 /* List.swift in Sources */,
 				3001CDB71F81D63E0073D991 /* Author.swift in Sources */,
 				3001CDB51F81D6360073D991 /* Label.swift in Sources */,
 			);

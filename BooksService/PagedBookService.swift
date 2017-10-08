@@ -11,7 +11,7 @@ import Pager
 import struct Model.Book
 import Result
 
-public final class PagedBookServie: PagedService {
+public final class PagedBookService: PagedService {
     public typealias Model = Book
     public typealias Error = BookError
     

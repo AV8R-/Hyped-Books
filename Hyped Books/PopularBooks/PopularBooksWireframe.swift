@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import func ServiceLocator.inject
+import BooksService
+import Pager
 
 final class PopularBooksWireframe {
     private init() {}
     
-    static func make() -> UIViewController {
-        let presetnter = PopularBooksPresenter()
+    static func make() throws -> UIViewController {
+        let service = PagedBookService(service: try inject())
+        let model = PopularBooksModel(pager: Pager(service: service))
+        let presetnter = PopularBooksPresenter(model: model)
         let view = PopularBooksCollectionView(presenter: presetnter)
+        
+        presetnter.view = view
+        model.presenter = presetnter
+        
         return view
     }
 }

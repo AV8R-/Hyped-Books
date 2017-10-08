@@ -9,8 +9,8 @@
 import Foundation
 
 public struct BookCover: Codable {
-    let large: URL
-    let placeholder: Data?
-    let ratio: Double
-    let small: URL
+    public let large: URL
+    public let placeholder: Data?
+    public let ratio: Double
+    public let small: URL
 }

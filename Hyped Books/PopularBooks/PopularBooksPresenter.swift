@@ -8,20 +8,48 @@
 
 import UIKit
 import struct Model.Book
+import protocol APIService.APIServiceError
 
-final class PopularBooksPresenter: PopularBooksPresenterProtocol {
+final class PopularBooksPresenter<ModelLayer>:
+    PopularBooksViewPresenterProtocol
+where
+    ModelLayer: PopularBooksModelProtocol,
+    ModelLayer.Model == Book
+{
     typealias Cell = UICollectionViewCell
-    typealias Model = Book
+    typealias Model = ModelLayer.Model
+    
+    let model: ModelLayer
+    weak var view: PopularBooksViewProtocol!
+    
+    init(model: ModelLayer) {
+        self.model = model
+    }
     
     func configure(cell: UICollectionViewCell, atIndex: Int) {
+        let book = model.books[atIndex]
+        
         let label = UILabel()
-        label.text = "\(atIndex)"
+        label.text = book.title
         cell.contentView.addSubview(label)
         cell.backgroundColor = .random
         try! label.constrainSuperview()
     }
     
     func itemsCount() -> Int {
-        return 10
+        return model.books.count
     }
 }
+
+extension PopularBooksPresenter: PopularBooksPresenterModelProtocol {
+    func blockLoadMore() {
+        view.blockLoadMore()
+    }
+    func handle(error: APIServiceError) {
+        view.showError(title: error.title, description: error.description)
+    }
+    func reload() {
+        view.reload()
+    }
+}
+

@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var bookPager: Pager<PagedBookServie>!
+    var bookPager: Pager<PagedBookService>!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
-        window?.rootViewController = PopularBooksWireframe.make()
+        window?.rootViewController = try! PopularBooksWireframe.make()
         window?.makeKeyAndVisible()
 //
 //        let books: BooksService = try! inject()

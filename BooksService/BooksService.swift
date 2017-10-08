@@ -18,6 +18,17 @@ public enum BookError: APIServiceError {
     
     case nested(api: APIError)
     case noPersistanteStorage
+    
+    public var title: String {
+        switch self {
+        case .noPersistanteStorage: return "Failed to fetch local books"
+        case .nested(let error): return error.title
+        }
+    }
+    
+    public var description: String {
+        return "Contant support"
+    }
 }
 
 public protocol BooksService {
