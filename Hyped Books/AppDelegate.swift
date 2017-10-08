@@ -27,24 +27,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let hub = ServiceHUB.shared
         hub.prepare(locator: locator)
         
-        let books: BooksService = try! inject()
-        let pagedBooks = PagedBookServie(service: books)
-        bookPager = Pager(service: pagedBooks)
-        
-        bookPager.loadMore { result in
-            print(result)
-            self.bookPager.loadMore { result in
-                print(result)
-            }
-        }
-        
-        books.fetchBook(byUUID: "iemWF1Zx") { result in
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        window?.rootViewController = PopularBooksWireframe.make()
+        window?.makeKeyAndVisible()
+//
+//        let books: BooksService = try! inject()
+//        let pagedBooks = PagedBookServie(service: books)
+//        bookPager = Pager(service: pagedBooks)
+//
+//        bookPager.loadMore { result in
 //            print(result)
-        }
-        
-//        books.fetchList(page: 0) { result in
-//            print(result.value?.count as Any)
+//            self.bookPager.loadMore { result in
+//                print(result)
+//            }
 //        }
+//
+//        books.fetchBook(byUUID: "iemWF1Zx") { result in
+////            print(result)
+//        }
+//
+////        books.fetchList(page: 0) { result in
+////            print(result.value?.count as Any)
+////        }
         
         return true
     }
