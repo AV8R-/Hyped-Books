@@ -17,6 +17,7 @@ public enum BookError: APIServiceError {
     }
     
     case nested(api: APIError)
+    case noPersistanteStorage
 }
 
 public protocol BooksService {
