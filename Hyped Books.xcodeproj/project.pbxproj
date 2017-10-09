@@ -59,6 +59,7 @@
 		305401C71F8AF4D0005A60FE /* BookViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305401C61F8AF4D0005A60FE /* BookViewCell.swift */; };
 		305401C91F8AF7B6005A60FE /* BookCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305401C81F8AF7B6005A60FE /* BookCardView.xib */; };
 		305401CB1F8AFB28005A60FE /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305401CA1F8AFB28005A60FE /* UIView+Utils.swift */; };
+		305401CD1F8AFD36005A60FE /* NSAttributedString+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305401CC1F8AFD36005A60FE /* NSAttributedString+HTML.swift */; };
 		30E8F2A81F80F6CD003C2014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */; };
 		30E8F2AA1F80F6CD003C2014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A91F80F6CD003C2014 /* ViewController.swift */; };
 		30E8F2AD1F80F6CD003C2014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E8F2AB1F80F6CD003C2014 /* Main.storyboard */; };
@@ -330,6 +331,7 @@
 		305401C61F8AF4D0005A60FE /* BookViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewCell.swift; sourceTree = "<group>"; };
 		305401C81F8AF7B6005A60FE /* BookCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCardView.xib; sourceTree = "<group>"; };
 		305401CA1F8AFB28005A60FE /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		305401CC1F8AFD36005A60FE /* NSAttributedString+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+HTML.swift"; sourceTree = "<group>"; };
 		30E8F2A41F80F6CD003C2014 /* Hyped Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hyped Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30E8F2A91F80F6CD003C2014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -562,6 +564,7 @@
 				305401A71F8AA427005A60FE /* UIView+constraints.swift */,
 				305401CA1F8AFB28005A60FE /* UIView+Utils.swift */,
 				305401AB1F8AD083005A60FE /* UIColor+random.swift */,
+				305401CC1F8AFD36005A60FE /* NSAttributedString+HTML.swift */,
 			);
 			path = "Hyped Books";
 			sourceTree = "<group>";
@@ -1153,6 +1156,7 @@
 				305401C71F8AF4D0005A60FE /* BookViewCell.swift in Sources */,
 				305401991F8A81CC005A60FE /* PopularBooksPresenter.swift in Sources */,
 				305401AC1F8AD083005A60FE /* UIColor+random.swift in Sources */,
+				305401CD1F8AFD36005A60FE /* NSAttributedString+HTML.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1617,6 +1621,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.manshilin.Hyped-Books";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1634,6 +1639,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.manshilin.Hyped-Books";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

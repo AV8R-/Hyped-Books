@@ -6,7 +6,7 @@
 //  Copyright © 2017 BManshilin. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import struct Model.Book
 import protocol APIService.APIServiceError
 
