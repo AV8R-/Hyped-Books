@@ -9,37 +9,26 @@
 import UIKit
 
 final class BookCardView: UIView, BookViewProtocol {
-    let presenter: BookViewPresenterProtocol
-    weak var title: UILabel!
+    var presenter: BookViewPresenterProtocol!
     
-    init(presenter: BookViewPresenterProtocol) {
-        self.presenter = presenter
-        super.init(frame: .zero)
-        
-        let title = UILabel()
-        addSubview(title)
-        try! title.constrainSuperview()
-        
-        self.title = title
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    @IBOutlet weak var cover: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var author: UILabel!
+    @IBOutlet weak var annotation: UILabel!
     
     func set(title: String) {
         self.title.text = title
     }
     
     func set(author: String) {
-        
+        self.author.text = author
     }
     
     func set(coverFromURL url: URL) {
-        
+        self.cover.backgroundColor = .random
     }
     
     func set(annotation: String) {
-        
+        self.annotation.text = annotation
     }
 }

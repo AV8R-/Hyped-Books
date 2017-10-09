@@ -26,7 +26,7 @@ where
     init(cell: Cell.Type, presenter: Presenter) {
         self.presenter = presenter
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 150, height: 250)
+        layout.itemSize = CGSize(width: 150, height: 350)
         layout.sectionInset = .init(top: 40, left: 40, bottom: 40, right: 40)
         super.init(collectionViewLayout: layout)
     }

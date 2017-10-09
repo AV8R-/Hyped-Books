@@ -14,7 +14,7 @@ final class BookViewCellAdaptor: UICollectionViewCell, BookInputContaining {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let module = BookWireframe.make()
+        let module = try! BookWireframe.make()
         contentView.addSubview(module.0)
         try! module.0.constrainSuperview()
         self.input = module.1

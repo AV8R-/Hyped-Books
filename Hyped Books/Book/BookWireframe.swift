@@ -11,11 +11,12 @@ import UIKit
 final class BookWireframe {
     private init() {}
     
-    static func make() -> (UIView, BookInput) {
+    static func make() throws -> (UIView, BookInput) {
         let model = BookModel()
         let presenter = BookPresenter(model: model)
-        let view = BookCardView(presenter: presenter)
+        let view: BookCardView = try .instantiateFromXib()
         
+        view.presenter = presenter
         presenter.view = view
         model.presenter = presenter
         
