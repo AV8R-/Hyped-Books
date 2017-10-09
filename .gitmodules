@@ -1,0 +1,12 @@
+[submodule "Dependencies/Alamofire"]
+	path = Dependencies/Alamofire
+	url = git@github.com:Alamofire/Alamofire.git
+[submodule "Dependencies/Result"]
+	path = Dependencies/Result
+	url = git@github.com:antitypical/Result.git
+[submodule "Dependencies/Moya"]
+	path = Dependencies/Moya
+	url = git@github.com:Moya/Moya.git
+[submodule "Dependencies/SDWebImage"]
+	path = Dependencies/SDWebImage
+	url = git@github.com:rs/SDWebImage.git

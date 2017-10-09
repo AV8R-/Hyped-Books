@@ -7,15 +7,50 @@
 //
 
 import UIKit
+import Services
+import ServiceLocator
+import BooksService
+import Pager
+import Result
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    var bookPager: Pager<PagedBookService>!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let locator = ServiceLoader.shared
+        let hub = ServiceHUB.shared
+        hub.prepare(locator: locator)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        window?.rootViewController = try! PopularBooksWireframe.make()
+        window?.makeKeyAndVisible()
+//
+//        let books: BooksService = try! inject()
+//        let pagedBooks = PagedBookServie(service: books)
+//        bookPager = Pager(service: pagedBooks)
+//
+//        bookPager.loadMore { result in
+//            print(result)
+//            self.bookPager.loadMore { result in
+//                print(result)
+//            }
+//        }
+//
+//        books.fetchBook(byUUID: "iemWF1Zx") { result in
+////            print(result)
+//        }
+//
+////        books.fetchList(page: 0) { result in
+////            print(result.value?.count as Any)
+////        }
+        
         return true
     }
 

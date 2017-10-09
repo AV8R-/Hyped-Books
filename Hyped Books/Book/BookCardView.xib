@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BookCardView" customModule="Hyped_Books" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="taA-8i-G5E">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="225"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="taA-8i-G5E" secondAttribute="height" multiplier="1:1.5" id="Jh3-w8-yvI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Long Title of The Book" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA3-Fc-vgd">
+                    <rect key="frame" x="0.0" y="233" width="150" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGI-Al-K1g">
+                    <rect key="frame" x="0.0" y="268.5" width="150" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the three lines annotation. Really three lines.Not much more." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDA-sV-I2z">
+                    <rect key="frame" x="2" y="285" width="146" height="50.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="taA-8i-G5E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2qH-4B-SX1"/>
+                <constraint firstItem="XDA-sV-I2z" firstAttribute="top" secondItem="vGI-Al-K1g" secondAttribute="bottom" constant="2" id="8fA-E9-udM"/>
+                <constraint firstItem="qA3-Fc-vgd" firstAttribute="top" secondItem="taA-8i-G5E" secondAttribute="bottom" constant="8" id="FfQ-gF-U4B"/>
+                <constraint firstItem="taA-8i-G5E" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GY1-vd-EbF"/>
+                <constraint firstAttribute="trailing" secondItem="qA3-Fc-vgd" secondAttribute="trailing" id="IDl-M9-p1q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XDA-sV-I2z" secondAttribute="trailing" constant="2" id="Rwj-zG-x0u"/>
+                <constraint firstItem="vGI-Al-K1g" firstAttribute="top" secondItem="qA3-Fc-vgd" secondAttribute="bottom" constant="2" id="XYF-qF-3WX"/>
+                <constraint firstItem="vGI-Al-K1g" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YDJ-Fg-adM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vGI-Al-K1g" secondAttribute="trailing" id="YW1-kY-L5T"/>
+                <constraint firstItem="qA3-Fc-vgd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Yns-y2-Dh5"/>
+                <constraint firstItem="XDA-sV-I2z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="ZPy-VX-Hwy"/>
+                <constraint firstItem="qA3-Fc-vgd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="etl-Eq-vQn"/>
+                <constraint firstAttribute="trailing" secondItem="taA-8i-G5E" secondAttribute="trailing" id="gwu-BB-abu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XDA-sV-I2z" secondAttribute="bottom" id="pfz-BW-7yI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="annotation" destination="XDA-sV-I2z" id="waj-3j-ONH"/>
+                <outlet property="author" destination="vGI-Al-K1g" id="WRe-VI-smq"/>
+                <outlet property="cover" destination="taA-8i-G5E" id="UlG-Dz-kfv"/>
+                <outlet property="title" destination="qA3-Fc-vgd" id="S2m-Zw-573"/>
+            </connections>
+        </view>
+    </objects>
+</document>
