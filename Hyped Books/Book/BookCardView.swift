@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 final class BookCardView: UIView, BookViewProtocol {
     var presenter: BookViewPresenterProtocol!
@@ -25,6 +26,7 @@ final class BookCardView: UIView, BookViewProtocol {
     }
     
     func set(coverFromURL url: URL) {
+        self.cover.sd_setImage(with: url, completed: nil)
         self.cover.backgroundColor = .random
     }
     

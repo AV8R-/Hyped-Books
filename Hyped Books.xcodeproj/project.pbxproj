@@ -37,6 +37,8 @@
 		3001CDC91F81D9D20073D991 /* BooksService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CDC21F81D9D20073D991 /* BooksService.framework */; };
 		3001CDCA1F81D9D20073D991 /* BooksService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3001CDC21F81D9D20073D991 /* BooksService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3001CDDF1F81D9E50073D991 /* BooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001CDDE1F81D9E50073D991 /* BooksService.swift */; };
+		3022F34C1F8B05BE00B38A09 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3022F3451F8B05B600B38A09 /* SDWebImage.framework */; };
+		3022F34D1F8B05BE00B38A09 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3022F3451F8B05B600B38A09 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		305401401F8A4F6D005A60FE /* APIBookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3054013F1F8A4F6D005A60FE /* APIBookService.swift */; };
 		305401521F8A5781005A60FE /* ServicesHUB+Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305401511F8A5781005A60FE /* ServicesHUB+Books.swift */; };
 		305401661F8A6257005A60FE /* Pager.h in Headers */ = {isa = PBXBuildFile; fileRef = 305401641F8A6257005A60FE /* Pager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -119,6 +121,55 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3001CDC11F81D9D20073D991;
 			remoteInfo = BooksService;
+		};
+		3022F3401F8B05B600B38A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3022F3271F8B05B600B38A09 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53761325155AD0D5005750A4;
+			remoteInfo = "SDWebImage iOS static";
+		};
+		3022F3421F8B05B600B38A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3022F3271F8B05B600B38A09 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4314D1991D0E0E3B004B36C9;
+			remoteInfo = "SDWebImage watchOS static";
+		};
+		3022F3441F8B05B600B38A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3022F3271F8B05B600B38A09 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A2CADFF1AB4BB5300B6BC39;
+			remoteInfo = "SDWebImage iOS";
+		};
+		3022F3461F8B05B600B38A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3022F3271F8B05B600B38A09 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00733A4C1BC487C000A5A117;
+			remoteInfo = "SDWebImage tvOS";
+		};
+		3022F3481F8B05B600B38A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3022F3271F8B05B600B38A09 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 431BB7031D06D2C1006A3455;
+			remoteInfo = "SDWebImage watchOS";
+		};
+		3022F34A1F8B05B600B38A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3022F3271F8B05B600B38A09 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4397D2F21D0DDD8C00BB2784;
+			remoteInfo = "SDWebImage OSX";
+		};
+		3022F34E1F8B05BE00B38A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3022F3271F8B05B600B38A09 /* SDWebImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A2CADFE1AB4BB5300B6BC39;
+			remoteInfo = "SDWebImage iOS";
 		};
 		305401671F8A6257005A60FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -269,6 +320,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3022F34D1F8B05BE00B38A09 /* SDWebImage.framework in Embed Frameworks */,
 				3001CD3F1F81BA7D0073D991 /* Result.framework in Embed Frameworks */,
 				3001CDCA1F81D9D20073D991 /* BooksService.framework in Embed Frameworks */,
 				3001CD621F81C8AF0073D991 /* ServiceLocator.framework in Embed Frameworks */,
@@ -309,6 +361,7 @@
 		3001CDC41F81D9D20073D991 /* BooksService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BooksService.h; sourceTree = "<group>"; };
 		3001CDC51F81D9D20073D991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3001CDDE1F81D9E50073D991 /* BooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksService.swift; sourceTree = "<group>"; };
+		3022F3271F8B05B600B38A09 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = Dependencies/SDWebImage/SDWebImage.xcodeproj; sourceTree = "<group>"; };
 		3054013F1F8A4F6D005A60FE /* APIBookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBookService.swift; sourceTree = "<group>"; };
 		305401511F8A5781005A60FE /* ServicesHUB+Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServicesHUB+Books.swift"; sourceTree = "<group>"; };
 		305401621F8A6257005A60FE /* Pager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -389,6 +442,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3022F34C1F8B05BE00B38A09 /* SDWebImage.framework in Frameworks */,
 				3001CD3E1F81BA7D0073D991 /* Result.framework in Frameworks */,
 				3001CDC91F81D9D20073D991 /* BooksService.framework in Frameworks */,
 				3001CD611F81C8AF0073D991 /* ServiceLocator.framework in Frameworks */,
@@ -474,6 +528,19 @@
 				305401801F8A62DE005A60FE /* PagedBookService.swift */,
 			);
 			path = BooksService;
+			sourceTree = "<group>";
+		};
+		3022F3281F8B05B600B38A09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3022F3411F8B05B600B38A09 /* libSDWebImage iOS static.a */,
+				3022F3431F8B05B600B38A09 /* libSDWebImage watchOS static.a */,
+				3022F3451F8B05B600B38A09 /* SDWebImage.framework */,
+				3022F3471F8B05B600B38A09 /* SDWebImage.framework */,
+				3022F3491F8B05B600B38A09 /* SDWebImage.framework */,
+				3022F34B1F8B05B600B38A09 /* SDWebImage.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		305401631F8A6257005A60FE /* Pager */ = {
@@ -572,6 +639,7 @@
 		30E8F2B91F80FB3B003C2014 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				3022F3271F8B05B600B38A09 /* SDWebImage.xcodeproj */,
 				30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */,
 				30E8F2D31F80FB52003C2014 /* Moya.xcodeproj */,
 				30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */,
@@ -791,6 +859,7 @@
 				3001CD9A1F81D56F0073D991 /* PBXTargetDependency */,
 				3001CDC81F81D9D20073D991 /* PBXTargetDependency */,
 				305401681F8A6257005A60FE /* PBXTargetDependency */,
+				3022F34F1F8B05BE00B38A09 /* PBXTargetDependency */,
 			);
 			name = "Hyped Books";
 			productName = "Hyped Books";
@@ -886,6 +955,10 @@
 					ProductGroup = 30E8F2E31F80FB5A003C2014 /* Products */;
 					ProjectRef = 30E8F2E21F80FB5A003C2014 /* Result.xcodeproj */;
 				},
+				{
+					ProductGroup = 3022F3281F8B05B600B38A09 /* Products */;
+					ProjectRef = 3022F3271F8B05B600B38A09 /* SDWebImage.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -901,6 +974,48 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		3022F3411F8B05B600B38A09 /* libSDWebImage iOS static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImage iOS static.a";
+			remoteRef = 3022F3401F8B05B600B38A09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3022F3431F8B05B600B38A09 /* libSDWebImage watchOS static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImage watchOS static.a";
+			remoteRef = 3022F3421F8B05B600B38A09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3022F3451F8B05B600B38A09 /* SDWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDWebImage.framework;
+			remoteRef = 3022F3441F8B05B600B38A09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3022F3471F8B05B600B38A09 /* SDWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDWebImage.framework;
+			remoteRef = 3022F3461F8B05B600B38A09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3022F3491F8B05B600B38A09 /* SDWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDWebImage.framework;
+			remoteRef = 3022F3481F8B05B600B38A09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3022F34B1F8B05B600B38A09 /* SDWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDWebImage.framework;
+			remoteRef = 3022F34A1F8B05B600B38A09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		30E8F2C61F80FB4B003C2014 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -1207,6 +1322,11 @@
 			isa = PBXTargetDependency;
 			target = 3001CDC11F81D9D20073D991 /* BooksService */;
 			targetProxy = 3001CDC71F81D9D20073D991 /* PBXContainerItemProxy */;
+		};
+		3022F34F1F8B05BE00B38A09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SDWebImage iOS";
+			targetProxy = 3022F34E1F8B05BE00B38A09 /* PBXContainerItemProxy */;
 		};
 		305401681F8A6257005A60FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

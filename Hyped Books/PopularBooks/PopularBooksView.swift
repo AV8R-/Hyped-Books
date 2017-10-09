@@ -27,7 +27,7 @@ where
         self.presenter = presenter
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 150, height: 350)
-        layout.sectionInset = .init(top: 40, left: 40, bottom: 40, right: 40)
+        layout.sectionInset = .init(top: 40, left: 30, bottom: 40, right: 30)
         super.init(collectionViewLayout: layout)
     }
     
@@ -111,7 +111,7 @@ fileprivate enum Zone {
     case load, freeScroll
     
     private var loadSpaceRange: ClosedRange<CGFloat> {
-        return -1000...300
+        return -1000...400
     }
     
     mutating func willChange(hiddenSpace space: CGFloat) -> Bool {
