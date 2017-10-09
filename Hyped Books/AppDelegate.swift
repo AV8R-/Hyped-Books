@@ -9,16 +9,13 @@
 import UIKit
 import Services
 import ServiceLocator
-import BooksService
-import Pager
-import Result
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var bookPager: Pager<PagedBookService>!
+    var applicationModule: Application!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -27,9 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let hub = ServiceHUB.shared
         hub.prepare(locator: locator)
         
+        applicationModule = try! Application()
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
-        window?.rootViewController = try! PopularBooksWireframe.make()
+        window?.rootViewController = applicationModule.rootViewController
         window?.makeKeyAndVisible()
 //
 //        let books: BooksService = try! inject()
