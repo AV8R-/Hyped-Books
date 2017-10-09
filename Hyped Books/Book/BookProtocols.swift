@@ -7,3 +7,24 @@
 //
 
 import Foundation
+import Model
+
+protocol BookViewProtocol: class {
+    func set(title: String)
+    func set(author: String)
+    func set(coverFromURL url: URL)
+    func set(annotation: String)
+}
+
+protocol BookViewPresenterProtocol: class {
+}
+
+protocol BookPresenterModelProtocol: class {
+}
+
+protocol BookModelProtocol: class {
+}
+
+protocol BookInput: class {
+    func set(book: Book)
+}

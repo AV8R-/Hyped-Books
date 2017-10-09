@@ -11,9 +11,8 @@ import protocol APIService.APIServiceError
 
 protocol PopularBooksCollectionViewDataSource {
     associatedtype Model
-    associatedtype Cell: UICollectionViewCell
     
-    func configure(cell: Cell, atIndex: Int)
+    func configure(book: BookInput, atIndex: Int)
     func itemsCount() -> Int
 }
 
@@ -37,4 +36,8 @@ protocol PopularBooksModelProtocol: class {
     associatedtype Model
     var books: [Model] { get }
     func loadMore()
+}
+
+protocol BookInputContaining {
+    var input: BookInput! { get }
 }

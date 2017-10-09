@@ -16,7 +16,6 @@ where
     ModelLayer: PopularBooksModelProtocol,
     ModelLayer.Model == Book
 {
-    typealias Cell = UICollectionViewCell
     typealias Model = ModelLayer.Model
     
     let model: ModelLayer
@@ -26,14 +25,9 @@ where
         self.model = model
     }
     
-    func configure(cell: UICollectionViewCell, atIndex: Int) {
+    func configure(book input: BookInput, atIndex: Int) {
         let book = model.books[atIndex]
-        
-        let label = UILabel()
-        label.text = book.title
-        cell.contentView.addSubview(label)
-        cell.backgroundColor = .random
-        try! label.constrainSuperview()
+        input.set(book: book)
     }
     
     func itemsCount() -> Int {

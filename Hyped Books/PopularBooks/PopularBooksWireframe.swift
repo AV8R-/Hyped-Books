@@ -18,7 +18,10 @@ final class PopularBooksWireframe {
         let service = PagedBookService(service: try inject())
         let model = PopularBooksModel(pager: Pager(service: service))
         let presetnter = PopularBooksPresenter(model: model)
-        let view = PopularBooksCollectionView(presenter: presetnter)
+        let view = PopularBooksCollectionView(
+            cell: BookViewCellAdaptor.self,
+            presenter: presetnter
+        )
         
         presetnter.view = view
         model.presenter = presetnter

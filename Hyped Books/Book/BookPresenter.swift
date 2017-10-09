@@ -7,3 +7,28 @@
 //
 
 import Foundation
+import Model
+
+final class BookPresenter: BookViewPresenterProtocol {
+    
+    weak var view: BookViewProtocol!
+    var model: BookModelProtocol
+    
+    init(model: BookModelProtocol) {
+        self.model = model
+    }
+    
+}
+
+extension BookPresenter: BookPresenterModelProtocol {
+    
+}
+
+extension BookPresenter: BookInput {
+    func set(book: Book) {
+        view.set(title: book.title)
+        view.set(author: book.authors)
+        view.set(annotation: book.annotation ?? "")
+        view.set(coverFromURL: book.cover.large)
+    }
+}

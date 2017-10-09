@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+final class BookModel: BookModelProtocol {
+    weak var presenter: BookPresenterModelProtocol!
+}

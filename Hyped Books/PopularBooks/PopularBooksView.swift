@@ -12,7 +12,8 @@ final class PopularBooksCollectionView<Cell, Presenter>:
     UICollectionViewController
 where
     Presenter: PopularBooksViewPresenterProtocol,
-    Presenter.Cell == Cell
+    Cell: UICollectionViewCell,
+    Cell: BookInputContaining
 {
     fileprivate let presenter: Presenter
     var isAbleLoadMore: Bool = true
@@ -22,7 +23,7 @@ where
         return "cell"
     }
     
-    init(presenter: Presenter) {
+    init(cell: Cell.Type, presenter: Presenter) {
         self.presenter = presenter
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 150, height: 250)
@@ -61,7 +62,7 @@ where
                 withReuseIdentifier: reuseIdentifier,
                 for: indexPath
             ) as! Cell
-        presenter.configure(cell: cell, atIndex: indexPath.row)
+        presenter.configure(book: cell.input, atIndex: indexPath.row)
         return cell
     }
     
