@@ -29,11 +29,8 @@ final class BookCardView: UIView, BookViewProtocol {
     }
     
     func set(annotation: String) {
-        DispatchQueue.global().async {
-            let attributed = NSAttributedString(html: annotation)
-            DispatchQueue.main.async {
-                self.annotation.attributedText = attributed
-            }
-        }
+        self.annotation.text = annotation
+//            let attributed = NSAttributedString(html: annotation)
+//            self.annotation.attributedText = attributed
     }
 }
