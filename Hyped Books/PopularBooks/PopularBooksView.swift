@@ -66,6 +66,14 @@ where
         return cell
     }
     
+    override func collectionView(
+        _ collectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath
+        )
+    {
+        presenter.didPick(bookAtIndex: indexPath.item)
+    }
+    
     func loadMoreIfAble() {
         guard isAbleLoadMore else {
             return

@@ -10,19 +10,23 @@ import Foundation
 import struct Model.Book
 import protocol APIService.APIServiceError
 
-final class PopularBooksPresenter<ModelLayer>:
+final class PopularBooksPresenter<ModelLayer, Output>:
     PopularBooksViewPresenterProtocol
 where
     ModelLayer: PopularBooksModelProtocol,
-    ModelLayer.Model == Book
+    ModelLayer.Model == Book,
+    Output: BookOutput,
+    Output.Model == ModelLayer.Model
 {
     typealias Model = ModelLayer.Model
     
     let model: ModelLayer
     weak var view: PopularBooksViewProtocol!
+    weak var output: Output?
     
-    init(model: ModelLayer) {
+    init(model: ModelLayer, output: Output) {
         self.model = model
+        self.output = output
     }
     
     func configure(book input: BookInput, atIndex: Int) {
@@ -32,6 +36,10 @@ where
     
     func itemsCount() -> Int {
         return model.books.count
+    }
+    
+    func didPick(bookAtIndex index: Int) {
+        output?.didPick(book: model.books[index])
     }
     
     func loadMore() {

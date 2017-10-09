@@ -10,14 +10,20 @@ import UIKit
 import func ServiceLocator.inject
 import BooksService
 import Pager
+import Model
 
 final class PopularBooksWireframe {
     private init() {}
     
-    static func make() throws -> UIViewController {
+    static func make<Output>(output: Output)
+        throws -> UIViewController
+        where
+            Output: BookOutput,
+            Output.Model == Book
+    {
         let service = PagedBookService(service: try inject())
         let model = PopularBooksModel(pager: Pager(service: service))
-        let presetnter = PopularBooksPresenter(model: model)
+        let presetnter = PopularBooksPresenter(model: model, output: output)
         let view = PopularBooksCollectionView(
             cell: BookViewCellAdaptor.self,
             presenter: presetnter
