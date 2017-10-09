@@ -18,6 +18,7 @@ protocol PopularBooksCollectionViewDataSource {
 
 protocol PopularBooksViewPresenterProtocol: PopularBooksCollectionViewDataSource {
     func loadMore()
+    func didPick(bookAtIndex: Int)
 }
 
 protocol PopularBooksPresenterModelProtocol: class {
@@ -40,4 +41,10 @@ protocol PopularBooksModelProtocol: class {
 
 protocol BookInputContaining {
     var input: BookInput! { get }
+}
+
+protocol BookOutput: class {
+    associatedtype Model
+    
+    func didPick(book: Model)
 }
