@@ -9,6 +9,6 @@
 import Foundation
 
 public struct Author: Codable {
-    let name: String
-    let uuid: String
+    public let name: String
+    public let uuid: String
 }

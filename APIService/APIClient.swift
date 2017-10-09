@@ -21,8 +21,18 @@ public protocol APIClient {
 
 public protocol APIServiceError: Error {
     init(apiError: APIError)
+    
+    var title: String { get }
+    var description: String { get }
 }
 
 public enum APIError: Swift.Error {
     case nested(error: Swift.Error)
+    
+    public var title: String { return "Network error" }
+    public var description: String {
+        switch self {
+        case .nested(error: let error): return error.localizedDescription
+        }
+    }
 }

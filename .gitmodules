@@ -7,3 +7,6 @@
 [submodule "Dependencies/Moya"]
 	path = Dependencies/Moya
 	url = git@github.com:Moya/Moya.git
+[submodule "Dependencies/SDWebImage"]
+	path = Dependencies/SDWebImage
+	url = git@github.com:rs/SDWebImage.git
