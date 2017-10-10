@@ -66,6 +66,10 @@
 		305401C91F8AF7B6005A60FE /* BookCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305401C81F8AF7B6005A60FE /* BookCardView.xib */; };
 		305401CB1F8AFB28005A60FE /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305401CA1F8AFB28005A60FE /* UIView+Utils.swift */; };
 		305401CD1F8AFD36005A60FE /* NSAttributedString+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305401CC1F8AFD36005A60FE /* NSAttributedString+HTML.swift */; };
+		30A55D831F8CFC1E007FC351 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2DB1F80FB53003C2014 /* Moya.framework */; };
+		30A55D841F8CFC1E007FC351 /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2DB1F80FB53003C2014 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30A55D991F8CFC25007FC351 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2C61F80FB4B003C2014 /* Alamofire.framework */; };
+		30A55D9A1F8CFC25007FC351 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8F2C61F80FB4B003C2014 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		30E8F2A81F80F6CD003C2014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A71F80F6CD003C2014 /* AppDelegate.swift */; };
 		30E8F2AA1F80F6CD003C2014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8F2A91F80F6CD003C2014 /* ViewController.swift */; };
 		30E8F2AD1F80F6CD003C2014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E8F2AB1F80F6CD003C2014 /* Main.storyboard */; };
@@ -181,6 +185,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 305401611F8A6257005A60FE;
 			remoteInfo = Pager;
+		};
+		30A55D851F8CFC1E007FC351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2D31F80FB52003C2014 /* Moya.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6C081A4AC105D3F62F3C49;
+			remoteInfo = Moya;
+		};
+		30A55D9B1F8CFC25007FC351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E8F2BA1F80FB4B003C2014 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
 		};
 		30E8F2C51F80FB4B003C2014 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -327,10 +345,12 @@
 				3022F34D1F8B05BE00B38A09 /* SDWebImage.framework in Embed Frameworks */,
 				3001CD3F1F81BA7D0073D991 /* Result.framework in Embed Frameworks */,
 				3001CDCA1F81D9D20073D991 /* BooksService.framework in Embed Frameworks */,
+				30A55D9A1F8CFC25007FC351 /* Alamofire.framework in Embed Frameworks */,
 				3001CD621F81C8AF0073D991 /* ServiceLocator.framework in Embed Frameworks */,
 				30E8F3071F80FF8F003C2014 /* Services.framework in Embed Frameworks */,
 				3001CD7E1F81D35F0073D991 /* APIService.framework in Embed Frameworks */,
 				3001CD9C1F81D56F0073D991 /* Model.framework in Embed Frameworks */,
+				30A55D841F8CFC1E007FC351 /* Moya.framework in Embed Frameworks */,
 				3054016A1F8A6257005A60FE /* Pager.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -453,10 +473,12 @@
 				3022F34C1F8B05BE00B38A09 /* SDWebImage.framework in Frameworks */,
 				3001CD3E1F81BA7D0073D991 /* Result.framework in Frameworks */,
 				3001CDC91F81D9D20073D991 /* BooksService.framework in Frameworks */,
+				30A55D991F8CFC25007FC351 /* Alamofire.framework in Frameworks */,
 				3001CD611F81C8AF0073D991 /* ServiceLocator.framework in Frameworks */,
 				30E8F3061F80FF8F003C2014 /* Services.framework in Frameworks */,
 				3001CD7D1F81D35F0073D991 /* APIService.framework in Frameworks */,
 				3001CD9B1F81D56F0073D991 /* Model.framework in Frameworks */,
+				30A55D831F8CFC1E007FC351 /* Moya.framework in Frameworks */,
 				305401691F8A6257005A60FE /* Pager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -888,6 +910,8 @@
 				3001CDC81F81D9D20073D991 /* PBXTargetDependency */,
 				305401681F8A6257005A60FE /* PBXTargetDependency */,
 				3022F34F1F8B05BE00B38A09 /* PBXTargetDependency */,
+				30A55D861F8CFC1E007FC351 /* PBXTargetDependency */,
+				30A55D9C1F8CFC25007FC351 /* PBXTargetDependency */,
 			);
 			name = "Hyped Books";
 			productName = "Hyped Books";
@@ -1364,6 +1388,16 @@
 			isa = PBXTargetDependency;
 			target = 305401611F8A6257005A60FE /* Pager */;
 			targetProxy = 305401671F8A6257005A60FE /* PBXContainerItemProxy */;
+		};
+		30A55D861F8CFC1E007FC351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moya;
+			targetProxy = 30A55D851F8CFC1E007FC351 /* PBXContainerItemProxy */;
+		};
+		30A55D9C1F8CFC25007FC351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 30A55D9B1F8CFC25007FC351 /* PBXContainerItemProxy */;
 		};
 		30E8F3051F80FF8F003C2014 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
